@@ -1,0 +1,5 @@
+PHPUnit 11.5.56
+PHP 8.3.30
+Database: isolated PostgreSQL WASM through PDO pgsql
+Time: 00:41.594, Memory: 46.50 MB
+OK (10 tests, 74 assertions)

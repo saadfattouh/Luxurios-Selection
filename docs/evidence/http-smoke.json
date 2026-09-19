@@ -1,0 +1,47 @@
+[
+  {
+    "path": "health",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "ready",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "exhibitions",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "exhibitions/beyond-the-horizon",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "collections",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "home/curation",
+    "status": 200,
+    "contentType": "application/json"
+  },
+  {
+    "path": "hero media",
+    "status": 200,
+    "contentType": "image/jpeg"
+  },
+  {
+    "path": "exhibitions?per_page=99",
+    "status": 422,
+    "contentType": "application/problem+json"
+  },
+  {
+    "path": "missing",
+    "status": 404,
+    "contentType": "application/problem+json"
+  }
+]

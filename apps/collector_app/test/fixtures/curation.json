@@ -1,0 +1,937 @@
+{
+  "data": {
+    "current_exhibitions": [
+      {
+        "id": "00000000-0000-4000-8000-000000000500",
+        "slug": "beyond-the-horizon",
+        "title": {
+          "en": "Beyond the horizon",
+          "ar": "ما وراء الأفق"
+        },
+        "subtitle": {
+          "en": "On distance, light, and the art of being still.",
+          "ar": "عن المسافة والضوء وفن السكون."
+        },
+        "hero_artwork": {
+          "id": "00000000-0000-4000-8000-000000000100",
+          "slug": "where-silence-rises",
+          "title": {
+            "en": "Where silence rises",
+            "ar": "حيث يرتفع الصمت"
+          },
+          "story": {
+            "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+            "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+          },
+          "published_at": "2026-09-10T12:00:00+05:00",
+          "photographer": {
+            "id": "00000000-0000-4000-8000-000000000001",
+            "slug": "layla-noor",
+            "name": {
+              "en": "Layla Noor",
+              "ar": "ليلى نور"
+            },
+            "bio": {
+              "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+              "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+            }
+          },
+          "media": [
+            {
+              "id": "00000000-0000-4000-8000-000000000200",
+              "url": "http://localhost:8000/storage/demo/landscape.jpg",
+              "alt": {
+                "en": "A mountain rising through clouds",
+                "ar": "جبل يرتفع بين السحب"
+              },
+              "width": 1600,
+              "height": 1067,
+              "credit": "Unsplash reference image; fictional artwork attribution",
+              "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+            }
+          ],
+          "editions": [
+            {
+              "id": "00000000-0000-4000-8000-000000000400",
+              "label": {
+                "en": "Collector edition",
+                "ar": "إصدار لهواة الاقتناء"
+              },
+              "is_limited": true,
+              "total": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000501",
+        "slug": "silent-structures",
+        "title": {
+          "en": "Silent structures",
+          "ar": "بنى صامتة"
+        },
+        "subtitle": {
+          "en": "Photography at the edge of architecture.",
+          "ar": "التصوير على تخوم العمارة."
+        },
+        "hero_artwork": {
+          "id": "00000000-0000-4000-8000-000000000101",
+          "slug": "a-line-of-light",
+          "title": {
+            "en": "A line of light",
+            "ar": "خيط من ضوء"
+          },
+          "story": {
+            "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+            "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+          },
+          "published_at": "2026-09-11T12:00:00+05:00",
+          "photographer": {
+            "id": "00000000-0000-4000-8000-000000000001",
+            "slug": "layla-noor",
+            "name": {
+              "en": "Layla Noor",
+              "ar": "ليلى نور"
+            },
+            "bio": {
+              "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+              "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+            }
+          },
+          "media": [
+            {
+              "id": "00000000-0000-4000-8000-000000000201",
+              "url": "http://localhost:8000/storage/demo/architecture.jpg",
+              "alt": {
+                "en": "Architectural forms against the sky",
+                "ar": "تكوينات معمارية في مواجهة السماء"
+              },
+              "width": 1400,
+              "height": 933,
+              "credit": "Unsplash reference image; fictional artwork attribution",
+              "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+            }
+          ],
+          "editions": [
+            {
+              "id": "00000000-0000-4000-8000-000000000401",
+              "label": {
+                "en": "Collector edition",
+                "ar": "إصدار لهواة الاقتناء"
+              },
+              "is_limited": true,
+              "total": 15
+            }
+          ]
+        }
+      }
+    ],
+    "curators_selection": [
+      {
+        "id": "00000000-0000-4000-8000-000000000100",
+        "slug": "where-silence-rises",
+        "title": {
+          "en": "Where silence rises",
+          "ar": "حيث يرتفع الصمت"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-10T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000200",
+            "url": "http://localhost:8000/storage/demo/landscape.jpg",
+            "alt": {
+              "en": "A mountain rising through clouds",
+              "ar": "جبل يرتفع بين السحب"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000400",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 10
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000101",
+        "slug": "a-line-of-light",
+        "title": {
+          "en": "A line of light",
+          "ar": "خيط من ضوء"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-11T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000201",
+            "url": "http://localhost:8000/storage/demo/architecture.jpg",
+            "alt": {
+              "en": "Architectural forms against the sky",
+              "ar": "تكوينات معمارية في مواجهة السماء"
+            },
+            "width": 1400,
+            "height": 933,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000401",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 15
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000102",
+        "slug": "the-watchful-hour",
+        "title": {
+          "en": "The watchful hour",
+          "ar": "ساعة الترقب"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-12T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000202",
+            "url": "http://localhost:8000/storage/demo/wildlife.jpg",
+            "alt": {
+              "en": "A lion at rest",
+              "ar": "أسد في لحظة سكون"
+            },
+            "width": 1400,
+            "height": 946,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000402",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 20
+          }
+        ]
+      }
+    ],
+    "new_works": [
+      {
+        "id": "00000000-0000-4000-8000-000000000105",
+        "slug": "stillness-in-stone",
+        "title": {
+          "en": "Stillness in stone",
+          "ar": "سكون الحجر"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-15T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000205",
+            "url": "http://localhost:8000/storage/demo/architecture.jpg",
+            "alt": {
+              "en": "Quiet geometry in architecture",
+              "ar": "هندسة هادئة في العمارة"
+            },
+            "width": 1400,
+            "height": 933,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000405",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 35
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000104",
+        "slug": "the-distance-within",
+        "title": {
+          "en": "The distance within",
+          "ar": "المسافة في داخلنا"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-14T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000204",
+            "url": "http://localhost:8000/storage/demo/landscape.jpg",
+            "alt": {
+              "en": "Mountain landscape and cloud",
+              "ar": "منظر جبلي وسحب"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000404",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 30
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000103",
+        "slug": "between-shadows",
+        "title": {
+          "en": "Between shadows",
+          "ar": "بين الظلال"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-13T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000203",
+            "url": "http://localhost:8000/storage/demo/monochrome.jpg",
+            "alt": {
+              "en": "Monochrome mountain landscape",
+              "ar": "منظر جبلي بالأبيض والأسود"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000403",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 25
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000102",
+        "slug": "the-watchful-hour",
+        "title": {
+          "en": "The watchful hour",
+          "ar": "ساعة الترقب"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-12T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000202",
+            "url": "http://localhost:8000/storage/demo/wildlife.jpg",
+            "alt": {
+              "en": "A lion at rest",
+              "ar": "أسد في لحظة سكون"
+            },
+            "width": 1400,
+            "height": 946,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000402",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 20
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000101",
+        "slug": "a-line-of-light",
+        "title": {
+          "en": "A line of light",
+          "ar": "خيط من ضوء"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-11T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000201",
+            "url": "http://localhost:8000/storage/demo/architecture.jpg",
+            "alt": {
+              "en": "Architectural forms against the sky",
+              "ar": "تكوينات معمارية في مواجهة السماء"
+            },
+            "width": 1400,
+            "height": 933,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000401",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 15
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000100",
+        "slug": "where-silence-rises",
+        "title": {
+          "en": "Where silence rises",
+          "ar": "حيث يرتفع الصمت"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-10T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000200",
+            "url": "http://localhost:8000/storage/demo/landscape.jpg",
+            "alt": {
+              "en": "A mountain rising through clouds",
+              "ar": "جبل يرتفع بين السحب"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000400",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 10
+          }
+        ]
+      }
+    ],
+    "featured_photographer": {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "slug": "layla-noor",
+      "name": {
+        "en": "Layla Noor",
+        "ar": "ليلى نور"
+      },
+      "bio": {
+        "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+        "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+      }
+    },
+    "limited_editions": [
+      {
+        "id": "00000000-0000-4000-8000-000000000100",
+        "slug": "where-silence-rises",
+        "title": {
+          "en": "Where silence rises",
+          "ar": "حيث يرتفع الصمت"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-10T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000200",
+            "url": "http://localhost:8000/storage/demo/landscape.jpg",
+            "alt": {
+              "en": "A mountain rising through clouds",
+              "ar": "جبل يرتفع بين السحب"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000400",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 10
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000101",
+        "slug": "a-line-of-light",
+        "title": {
+          "en": "A line of light",
+          "ar": "خيط من ضوء"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-11T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000201",
+            "url": "http://localhost:8000/storage/demo/architecture.jpg",
+            "alt": {
+              "en": "Architectural forms against the sky",
+              "ar": "تكوينات معمارية في مواجهة السماء"
+            },
+            "width": 1400,
+            "height": 933,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000401",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 15
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000102",
+        "slug": "the-watchful-hour",
+        "title": {
+          "en": "The watchful hour",
+          "ar": "ساعة الترقب"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-12T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000202",
+            "url": "http://localhost:8000/storage/demo/wildlife.jpg",
+            "alt": {
+              "en": "A lion at rest",
+              "ar": "أسد في لحظة سكون"
+            },
+            "width": 1400,
+            "height": 946,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000402",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 20
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000103",
+        "slug": "between-shadows",
+        "title": {
+          "en": "Between shadows",
+          "ar": "بين الظلال"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-13T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000203",
+            "url": "http://localhost:8000/storage/demo/monochrome.jpg",
+            "alt": {
+              "en": "Monochrome mountain landscape",
+              "ar": "منظر جبلي بالأبيض والأسود"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000403",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 25
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000104",
+        "slug": "the-distance-within",
+        "title": {
+          "en": "The distance within",
+          "ar": "المسافة في داخلنا"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-14T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000204",
+            "url": "http://localhost:8000/storage/demo/landscape.jpg",
+            "alt": {
+              "en": "Mountain landscape and cloud",
+              "ar": "منظر جبلي وسحب"
+            },
+            "width": 1600,
+            "height": 1067,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000404",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 30
+          }
+        ]
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000105",
+        "slug": "stillness-in-stone",
+        "title": {
+          "en": "Stillness in stone",
+          "ar": "سكون الحجر"
+        },
+        "story": {
+          "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+          "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+        },
+        "published_at": "2026-09-15T12:00:00+05:00",
+        "photographer": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "slug": "layla-noor",
+          "name": {
+            "en": "Layla Noor",
+            "ar": "ليلى نور"
+          },
+          "bio": {
+            "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+            "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+          }
+        },
+        "media": [
+          {
+            "id": "00000000-0000-4000-8000-000000000205",
+            "url": "http://localhost:8000/storage/demo/architecture.jpg",
+            "alt": {
+              "en": "Quiet geometry in architecture",
+              "ar": "هندسة هادئة في العمارة"
+            },
+            "width": 1400,
+            "height": 933,
+            "credit": "Unsplash reference image; fictional artwork attribution",
+            "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+          }
+        ],
+        "editions": [
+          {
+            "id": "00000000-0000-4000-8000-000000000405",
+            "label": {
+              "en": "Collector edition",
+              "ar": "إصدار لهواة الاقتناء"
+            },
+            "is_limited": true,
+            "total": 35
+          }
+        ]
+      }
+    ],
+    "collections": [
+      {
+        "id": "00000000-0000-4000-8000-000000000010",
+        "slug": "wildlife",
+        "title": {
+          "en": "Wildlife",
+          "ar": "الحياة البرية"
+        },
+        "atmosphere": "atmospheric"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000011",
+        "slug": "architecture",
+        "title": {
+          "en": "Architecture",
+          "ar": "العمارة"
+        },
+        "atmosphere": "geometric"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000012",
+        "slug": "landscape",
+        "title": {
+          "en": "Landscape",
+          "ar": "المناظر الطبيعية"
+        },
+        "atmosphere": "expansive"
+      },
+      {
+        "id": "00000000-0000-4000-8000-000000000013",
+        "slug": "black-and-white",
+        "title": {
+          "en": "Black & White",
+          "ar": "الأبيض والأسود"
+        },
+        "atmosphere": "monochrome"
+      }
+    ],
+    "section_limit": 6
+  }
+}

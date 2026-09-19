@@ -1,0 +1,25 @@
+{
+  "php_runtime": "8.3.30",
+  "laravel_framework": "v13.32.0",
+  "database_verification": "PostgreSQL WebAssembly (PGlite), PDO pgsql wire connection; not native PostgreSQL",
+  "php_lint": "40 application/domain/test PHP files passed",
+  "pint": "passed",
+  "phpstan": "level 0 passed; optional turbo extension unavailable, standard analysis completed",
+  "composer_validate": "passed strict",
+  "dart_format": "12 files checked; zero remaining formatting changes; unresolved flutter_lints warning because pub get was blocked",
+  "openapi": "OpenAPI 3.0.3 and captured live curation JSON validation passed",
+  "http_smoke": "see http-smoke.json; all six routes and media successful; 422 and 404 errors verified",
+  "flutter_analyze": "not run; Flutter startup blocked by approval review",
+  "flutter_unit_widget_tests": "authored; not run",
+  "flutter_live_integration_test": "authored; not run",
+  "flutter_android_web_builds": "not run",
+  "screenshots_and_device_performance": "not captured or verified",
+  "native_postgresql_ci": "authored; not run",
+  "phpunit": {
+    "result": "passed",
+    "tests": 10,
+    "assertions": 74,
+    "seconds": 41.594,
+    "database": "isolated PostgreSQL WebAssembly via PDO pgsql"
+  }
+}

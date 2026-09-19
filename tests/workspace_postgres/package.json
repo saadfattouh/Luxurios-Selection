@@ -1,0 +1,18 @@
+{
+  "name": "luxurious-workspace-verification",
+  "version": "1.0.0",
+  "description": "Optional isolated PostgreSQL WASM verification harness",
+  "scripts": {
+    "test": "node verify.mjs",
+    "smoke": "node smoke.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "pglite-server": "^0.1.5"
+  },
+  "private": true
+}

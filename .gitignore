@@ -1,0 +1,17 @@
+**/.env
+**/.env.testing
+**/vendor/
+**/.dart_tool/
+**/build/
+**/.phpunit.cache/
+**/storage/logs/*
+**/storage/framework/*
+**/storage/app/public/*
+**/bootstrap/cache/*.php
+**/android/local.properties
+**/.flutter-plugins-dependencies
+*.zip
+**/node_modules/
+**/public/storage
+**/.gradle/
+**/coverage/
