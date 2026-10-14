@@ -1,0 +1,68 @@
+[
+  {
+    "path": "health",
+    "status": 200
+  },
+  {
+    "path": "ready",
+    "status": 200
+  },
+  {
+    "path": "home/curation",
+    "status": 200
+  },
+  {
+    "path": "collections/landscape",
+    "status": 200
+  },
+  {
+    "path": "exhibitions/beyond-the-horizon/artworks?per_page=2",
+    "status": 200
+  },
+  {
+    "path": "next cursor",
+    "status": 200,
+    "distinct": true
+  },
+  {
+    "path": "artworks/where-silence-rises",
+    "status": 200
+  },
+  {
+    "path": "conditional detail",
+    "status": 304
+  },
+  {
+    "path": "hero",
+    "status": 200,
+    "bytes": 248695,
+    "width": 1280,
+    "height": 854
+  },
+  {
+    "path": "thumbnail",
+    "status": 200,
+    "bytes": 44148,
+    "width": 480,
+    "height": 320
+  },
+  {
+    "path": "fullscreen",
+    "status": 200,
+    "bytes": 438521,
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "path": "photographers/layla-noor",
+    "status": 200
+  },
+  {
+    "path": "collections/landscape/artworks?orientation=diagonal",
+    "status": 422
+  },
+  {
+    "path": "artworks/missing",
+    "status": 404
+  }
+]

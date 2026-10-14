@@ -1,0 +1,104 @@
+[127.0.0.1:58576]: Client connected
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 187.19ms DONE
+
+   INFO  Running migrations.  
+
+  2026_09_18_000001_create_exhibition_domain ......................... 3s DONE
+  2026_09_18_000002_create_queue_tables ........................ 356.76ms DONE
+
+
+   INFO  Seeding database.  
+
+[127.0.0.1:58576]: Client disconnected
+[Sat Sep 19 18:32:22 2026] PHP 8.3.6 Development Server (http://127.0.0.1:8000) started
+[Sat Sep 19 18:32:22 2026] 127.0.0.1:56490 Accepted
+[Sat Sep 19 10:32:22 2026] 127.0.0.1:56490 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"87f2e625-c07c-4a61-9ed8-9d0f113d380c","method":"GET","path":"api/v1/health","status":200,"duration_ms":26.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.115992+00:00","extra":{}}
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56490 Closing
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56504 Accepted
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56506 Accepted
+[Sat Sep 19 10:32:23 2026] 127.0.0.1:56504 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"71ded3c4-c355-4d50-a195-4df0916eb76e","method":"GET","path":"api/v1/health","status":200,"duration_ms":17.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.286444+00:00","extra":{}}
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56504 Closing
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56516 Accepted
+[Sat Sep 19 10:32:23 2026] 127.0.0.1:56506 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"87178725-0b51-4c3a-ae12-44d22e6ea864","method":"GET","path":"api/v1/health","status":200,"duration_ms":18.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.428801+00:00","extra":{}}
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56506 Closing
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56524 Accepted
+[Sat Sep 19 10:32:23 2026] 127.0.0.1:56516 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"2508e309-0c34-487f-bcf5-75be7e82be48","method":"GET","path":"api/v1/health","status":200,"duration_ms":17.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.560588+00:00","extra":{}}
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56516 Closing
+[Sat Sep 19 10:32:23 2026] 127.0.0.1:56524 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"98330721-e6e8-4896-a7bc-f689cb1f816d","method":"GET","path":"api/v1/health","status":200,"duration_ms":16.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.682765+00:00","extra":{}}
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56524 Closing
+[Sat Sep 19 18:32:23 2026] 127.0.0.1:56528 Accepted
+[Sat Sep 19 10:32:23 2026] 127.0.0.1:56528 [GET] URI: /api/v1/ready
+[127.0.0.1:39808]: Client connected
+{"message":"http.completed","context":{"request_id":"dc1dca5d-903f-4486-8155-2e0b5d395580","method":"GET","path":"api/v1/ready","status":200,"duration_ms":195.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:23.996852+00:00","extra":{}}
+[127.0.0.1:39808]: Client disconnected
+[Sat Sep 19 18:32:24 2026] 127.0.0.1:56528 Closing
+[Sat Sep 19 18:32:24 2026] 127.0.0.1:56532 Accepted
+[Sat Sep 19 10:32:24 2026] 127.0.0.1:56532 [GET] URI: /api/v1/exhibitions
+[127.0.0.1:39810]: Client connected
+{"message":"http.completed","context":{"request_id":"52ecfec2-6a31-4619-80ed-14b65138ef3e","method":"GET","path":"api/v1/exhibitions","status":200,"duration_ms":698.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:24.821952+00:00","extra":{}}
+[127.0.0.1:39810]: Client disconnected
+[Sat Sep 19 18:32:24 2026] 127.0.0.1:56532 Closing
+[Sat Sep 19 18:32:24 2026] 127.0.0.1:56548 Accepted
+[Sat Sep 19 10:32:24 2026] 127.0.0.1:56548 [GET] URI: /api/v1/exhibitions/beyond-the-horizon
+[127.0.0.1:39822]: Client connected
+{"message":"http.completed","context":{"request_id":"ca4ad87e-5d80-46a6-957b-4c3356037076","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon","status":200,"duration_ms":573.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:25.526411+00:00","extra":{}}
+[Sat Sep 19 18:32:25 2026] 127.0.0.1:56548 Closing
+[127.0.0.1:39822]: Client disconnected
+[Sat Sep 19 18:32:25 2026] 127.0.0.1:56558 Accepted
+[Sat Sep 19 10:32:25 2026] 127.0.0.1:56558 [GET] URI: /api/v1/collections
+[127.0.0.1:39836]: Client connected
+{"message":"http.completed","context":{"request_id":"255bc310-b534-4a8d-9a8d-587d182165de","method":"GET","path":"api/v1/collections","status":200,"duration_ms":302.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:25.937917+00:00","extra":{}}
+[127.0.0.1:39836]: Client disconnected
+[Sat Sep 19 18:32:25 2026] 127.0.0.1:56558 Closing
+[Sat Sep 19 18:32:25 2026] 127.0.0.1:56560 Accepted
+[Sat Sep 19 10:32:25 2026] 127.0.0.1:56560 [GET] URI: /api/v1/home/curation
+[127.0.0.1:39842]: Client connected
+{"message":"http.completed","context":{"request_id":"4bba7ce6-4467-41c6-9fa4-03cb309a3855","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1831.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:27.887293+00:00","extra":{}}
+[127.0.0.1:39842]: Client disconnected
+[Sat Sep 19 18:32:27 2026] 127.0.0.1:56560 Closing
+[Sat Sep 19 18:32:27 2026] 127.0.0.1:53736 Accepted
+[Sat Sep 19 18:32:27 2026] 127.0.0.1:53736 [200]: GET /storage/demo/landscape.jpg
+[Sat Sep 19 18:32:27 2026] 127.0.0.1:53736 Closing
+[Sat Sep 19 18:32:27 2026] 127.0.0.1:53742 Accepted
+[Sat Sep 19 10:32:27 2026] 127.0.0.1:53742 [GET] URI: /api/v1/exhibitions
+{"message":"http.completed","context":{"request_id":"a91fa83a-df69-4255-96b7-4e62ccfff430","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":40.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:28.101097+00:00","extra":{}}
+[Sat Sep 19 18:32:28 2026] 127.0.0.1:53742 Closing
+[Sat Sep 19 18:32:28 2026] 127.0.0.1:53750 Accepted
+[Sat Sep 19 10:32:28 2026] 127.0.0.1:53750 [GET] URI: /api/v1/missing
+{"message":"http.completed","context":{"request_id":"9d125d36-3f00-459f-ad66-fb7c435d3826","method":"GET","path":"api/v1/missing","status":404,"duration_ms":18.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-09-19T10:32:28.243053+00:00","extra":{}}
+[Sat Sep 19 18:32:28 2026] 127.0.0.1:53750 Closing
+[
+  { path: 'health', status: 200, contentType: 'application/json' },
+  { path: 'ready', status: 200, contentType: 'application/json' },
+  { path: 'exhibitions', status: 200, contentType: 'application/json' },
+  {
+    path: 'exhibitions/beyond-the-horizon',
+    status: 200,
+    contentType: 'application/json'
+  },
+  { path: 'collections', status: 200, contentType: 'application/json' },
+  {
+    path: 'home/curation',
+    status: 200,
+    contentType: 'application/json'
+  },
+  { path: 'hero media', status: 200, contentType: 'image/jpeg' },
+  {
+    path: 'exhibitions?per_page=99',
+    status: 422,
+    contentType: 'application/problem+json'
+  },
+  {
+    path: 'missing',
+    status: 404,
+    contentType: 'application/problem+json'
+  }
+]

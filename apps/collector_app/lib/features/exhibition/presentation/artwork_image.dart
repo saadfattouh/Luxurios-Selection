@@ -9,24 +9,42 @@ class ArtworkImage extends StatelessWidget {
     super.key,
     required this.artwork,
     this.fit = BoxFit.contain,
+    this.rendition = 'hero',
   });
   final Artwork? artwork;
   final BoxFit fit;
+  final String rendition;
   @override
   Widget build(BuildContext context) {
     final media = artwork?.media.firstOrNull;
     if (media == null) return const ImageUnavailable();
+    final cap = rendition == 'fullscreen'
+        ? 1920
+        : rendition == 'thumbnail'
+        ? 480
+        : 1280;
+    final maxSide = media.width > media.height ? media.width : media.height;
+    final decodeWidth = (media.width * (maxSide > cap ? cap / maxSide : 1))
+        .round();
+    final color = media.dominantColor;
+    final placeholderColor =
+        color != null && RegExp(r'^#[0-9a-fA-F]{6}$').hasMatch(color)
+        ? Color(int.parse('FF${color.substring(1)}', radix: 16))
+        : ExhibitionTokens.surface;
     return Semantics(
       image: true,
       label: media.alt.en,
       child: ExcludeSemantics(
         child: CachedNetworkImage(
-          imageUrl: media.url,
+          imageUrl: media.urlFor(rendition),
           fit: fit,
-          memCacheWidth: 1600,
-          placeholder: (context, url) => const ColoredBox(
-            color: ExhibitionTokens.surface,
-            child: Center(
+          memCacheWidth: decodeWidth,
+          fadeInDuration: MediaQuery.disableAnimationsOf(context)
+              ? Duration.zero
+              : const Duration(milliseconds: 150),
+          placeholder: (context, url) => ColoredBox(
+            color: placeholderColor,
+            child: const Center(
               child: SizedBox(
                 width: 24,
                 height: 24,

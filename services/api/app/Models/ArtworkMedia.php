@@ -10,7 +10,7 @@ final class ArtworkMedia extends DomainModel
 {
     protected function casts(): array
     {
-        return [];
+        return ['renditions' => 'array'];
     }
 
     protected $table = 'artwork_media';

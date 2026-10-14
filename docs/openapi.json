@@ -2,7 +2,7 @@
   "openapi": "3.0.3",
   "info": {
     "title": "Luxurious Selection",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Public, read-only Phase 1 exhibition API. Curation is a bounded editorial snapshot."
   },
   "servers": [
@@ -297,6 +297,434 @@
           }
         }
       }
+    },
+    "/collections/{slug}": {
+      "get": {
+        "operationId": "getCollection",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public read-only response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Collection"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            },
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Representation unchanged; no body"
+          },
+          "default": {
+            "description": "RFC 9457 error",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/collections/{slug}/artworks": {
+      "get": {
+        "operationId": "getCollectionsArtworks",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 24,
+              "default": 12
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 1024
+            }
+          },
+          {
+            "name": "orientation",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "landscape",
+                "portrait",
+                "square"
+              ]
+            }
+          },
+          {
+            "name": "availability",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "available",
+                "sold_out",
+                "unavailable",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "edition_status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "limited",
+                "open"
+              ]
+            }
+          },
+          {
+            "name": "collection",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "pattern": "^[a-z0-9-]+$"
+            }
+          },
+          {
+            "name": "photographer",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "pattern": "^[a-z0-9-]+$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public read-only response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkStream"
+                }
+              }
+            },
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Representation unchanged; no body"
+          },
+          "default": {
+            "description": "RFC 9457 error",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/exhibitions/{slug}/artworks": {
+      "get": {
+        "operationId": "getExhibitionsArtworks",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 24,
+              "default": 12
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 1024
+            }
+          },
+          {
+            "name": "orientation",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "landscape",
+                "portrait",
+                "square"
+              ]
+            }
+          },
+          {
+            "name": "availability",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "available",
+                "sold_out",
+                "unavailable",
+                "unknown"
+              ]
+            }
+          },
+          {
+            "name": "edition_status",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "limited",
+                "open"
+              ]
+            }
+          },
+          {
+            "name": "collection",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "pattern": "^[a-z0-9-]+$"
+            }
+          },
+          {
+            "name": "photographer",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "pattern": "^[a-z0-9-]+$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public read-only response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArtworkStream"
+                }
+              }
+            },
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Representation unchanged; no body"
+          },
+          "default": {
+            "description": "RFC 9457 error",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/artworks/{key}": {
+      "get": {
+        "operationId": "getArtwork",
+        "parameters": [
+          {
+            "name": "key",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public read-only response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Artwork"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            },
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Representation unchanged; no body"
+          },
+          "default": {
+            "description": "RFC 9457 error",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/photographers/{key}": {
+      "get": {
+        "operationId": "getPhotographer",
+        "parameters": [
+          {
+            "name": "key",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Public read-only response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "$ref": "#/components/schemas/Photographer"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                }
+              }
+            },
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Cache-Control": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "Representation unchanged; no body"
+          },
+          "default": {
+            "description": "RFC 9457 error",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -353,6 +781,28 @@
           "source_url": {
             "type": "string",
             "format": "uri"
+          },
+          "aspect_ratio": {
+            "type": "number"
+          },
+          "dominant_color": {
+            "type": "string",
+            "nullable": true,
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          },
+          "renditions": {
+            "type": "object",
+            "properties": {
+              "thumbnail": {
+                "$ref": "#/components/schemas/Rendition"
+              },
+              "hero": {
+                "$ref": "#/components/schemas/Rendition"
+              },
+              "fullscreen": {
+                "$ref": "#/components/schemas/Rendition"
+              }
+            }
           }
         }
       },
@@ -403,6 +853,24 @@
             "type": "integer",
             "nullable": true,
             "minimum": 1
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "available",
+              "sold_out",
+              "unavailable",
+              "unknown"
+            ]
+          },
+          "starting_price": {
+            "$ref": "#/components/schemas/StartingPrice"
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PrintSize"
+            }
           }
         }
       },
@@ -450,6 +918,12 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Edition"
+            }
+          },
+          "collections": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Collection"
             }
           }
         }
@@ -751,6 +1225,220 @@
             ]
           }
         }
+      },
+      "Rendition": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "aspect_ratio": {
+            "type": "number",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "url",
+          "width",
+          "height",
+          "aspect_ratio"
+        ]
+      },
+      "StartingPrice": {
+        "type": "object",
+        "properties": {
+          "amount_minor": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "currency": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$"
+          }
+        },
+        "required": [
+          "amount_minor",
+          "currency"
+        ],
+        "nullable": true
+      },
+      "PrintSize": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "label": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "width_mm": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height_mm": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "width_mm",
+          "height_mm"
+        ]
+      },
+      "PhotographerSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "name": {
+            "$ref": "#/components/schemas/LocalizedText"
+          }
+        },
+        "required": [
+          "id",
+          "slug",
+          "name"
+        ]
+      },
+      "ArtworkSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "$ref": "#/components/schemas/LocalizedText"
+          },
+          "photographer": {
+            "$ref": "#/components/schemas/PhotographerSummary"
+          },
+          "media": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/Media"
+            }
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "available",
+              "sold_out",
+              "unavailable",
+              "unknown"
+            ]
+          },
+          "edition_summary": {
+            "type": "object",
+            "properties": {
+              "is_limited": {
+                "type": "boolean"
+              },
+              "total": {
+                "type": "integer",
+                "nullable": true,
+                "minimum": 1
+              }
+            },
+            "required": [
+              "is_limited",
+              "total"
+            ],
+            "nullable": true
+          }
+        },
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "photographer",
+          "media",
+          "availability",
+          "edition_summary"
+        ]
+      },
+      "ArtworkStream": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "maxItems": 24,
+            "items": {
+              "$ref": "#/components/schemas/ArtworkSummary"
+            }
+          },
+          "links": {
+            "type": "object",
+            "properties": {
+              "first": {
+                "type": "string",
+                "nullable": true
+              },
+              "last": {
+                "type": "string",
+                "nullable": true
+              },
+              "prev": {
+                "type": "string",
+                "nullable": true
+              },
+              "next": {
+                "type": "string",
+                "nullable": true
+              }
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "per_page": {
+                "type": "integer"
+              },
+              "next_cursor": {
+                "type": "string",
+                "nullable": true
+              },
+              "prev_cursor": {
+                "type": "string",
+                "nullable": true
+              }
+            },
+            "required": [
+              "next_cursor",
+              "prev_cursor",
+              "per_page"
+            ]
+          }
+        },
+        "required": [
+          "data",
+          "links",
+          "meta"
+        ]
       }
     }
   }

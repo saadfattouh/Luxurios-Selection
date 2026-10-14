@@ -1,0 +1,117 @@
+[127.0.0.1:50234]: Client connected
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 181.14ms DONE
+
+   INFO  Running migrations.  
+
+  2026_09_18_000001_create_exhibition_domain ......................... 3s DONE
+  2026_09_18_000002_create_queue_tables ........................ 352.65ms DONE
+
+
+   INFO  Seeding database.  
+
+[127.0.0.1:50234]: Client disconnected
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.6
+Configuration: /workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/phpunit.xml
+
+EEEEEEEEEE                                                        10 / 10 (100%)
+
+Time: 00:00.258, Memory: 32.00 MB
+
+There were 10 errors:
+
+1) Tests\Feature\ExhibitionApiTest::test_seed_is_repeatable_and_curation_is_explicit
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+2) Tests\Feature\ExhibitionApiTest::test_pagination_and_validation
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+3) Tests\Feature\ExhibitionApiTest::test_draft_and_future_exhibitions_are_hidden
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+4) Tests\Feature\ExhibitionApiTest::test_draft_hero_and_artworks_cannot_leak
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+5) Tests\Feature\ExhibitionApiTest::test_read_only_and_problem_errors
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+6) Tests\Feature\ExhibitionApiTest::test_health_readiness_and_empty_curation
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+7) Tests\Feature\ExhibitionApiTest::test_collection_pagination_and_stable_media_urls
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+8) Tests\Feature\ExhibitionApiTest::test_readiness_failure_is_a_safe_problem
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+9) Tests\Feature\ExhibitionApiTest::test_limited_editions_require_a_non_null_positive_total
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:22
+
+10) Tests\Unit\FilesystemMediaUrlResolverTest::test_uses_configured_disk_without_rewriting_path
+RuntimeException: Tests require a dedicated PostgreSQL database ending in _test.
+
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/TestCase.php:15
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:85
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/InteractsWithTestCaseLifecycle.php:101
+/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php:75
+
+ERRORS!
+Tests: 10, Assertions: 0, Errors: 10.

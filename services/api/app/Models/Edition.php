@@ -11,7 +11,7 @@ final class Edition extends DomainModel
 {
     protected function casts(): array
     {
-        return ['is_limited' => 'boolean', 'total' => 'integer'];
+        return ['is_limited' => 'boolean', 'total' => 'integer', 'starting_price_minor' => 'integer'];
     }
 
     public function artwork(): BelongsTo

@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "slug": "layla-noor",
+    "name": {
+      "en": "Layla Noor",
+      "ar": "ليلى نور"
+    },
+    "bio": {
+      "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+      "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+    }
+  }
+}

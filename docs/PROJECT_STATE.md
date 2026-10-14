@@ -1,37 +1,37 @@
 # Project state
 
-Milestone: Phase 1 — Foundation, Architecture and Exhibition Entrance.
+Milestone: Phase 2 — Exhibition Discovery and Artwork Experience.
 
-**Status: source implementation delivered; backend verified; end-to-end acceptance blocked. Do not start Phase 2 implementation yet.**
+Status: source implementation and backend verification complete; Flutter/device acceptance pending. Phase 2 is not yet signed off end to end.
+
+## Starting point
+
+Continued `saadfattouh/Luxurios-Selection` main at `09465cdb612f14121971e35f437b308d75bd3b74`. The checkout was clean and contained the user's media/CORS changes, Android runner updates and Flutter lockfile. All eleven authoritative documents were read. No AGENTS.md was present. The original Phase 1 architecture and tests remain.
 
 ## Implemented
 
-- Complete original north-star brief saved as CORE_EXPERIENCE.md.
-- New monorepo and baseline Git checkpoint (8f75c18).
-- Laravel 13 / PHP 8.3 app, PostgreSQL migrations and nine domain entities with factories.
-- Repeatable sample seeder, bundled media, EN/AR content and publication controls.
-- Six read-only v1 routes, resources, bounded curation, paginated indexes, validation, Problem Details, JSON logs, request IDs, throttling, health/readiness.
-- Local/S3 filesystem URL abstraction and database queue foundation.
-- Flutter MVVM-style source with Provider, typed API/repository layer, tokens, bootstrap and Android/web runners.
-- Cinematic entrance, shared-image transition, responsive home sections, retry/loading/empty/image failure states, reduced-motion handling.
-- Backend tests, Flutter unit/widget tests, a live integration test, contract validator and native PostgreSQL/Flutter CI configuration.
-- Setup, verification, full API contract, design/motion documentation and handoff.
+- Existing entrance and home lead into collection/exhibition browsing and a shared artwork focus view.
+- Four collection atmospheres, lazy horizontal pages, bounded hero prefetch, shared-element approach/back, progressive story/biography/edition/price display, local shortlist behind a persistence interface.
+- In-session gallery position and filters survive artwork navigation. Reduced-motion and loading/offline/empty/missing-image/API-error states are implemented.
+- Five additional read-only routes complete the requested six-route set (exhibition detail already existed). Validated filters, UUID cursor pagination, lightweight stream resources, detailed artwork resource, publication filtering and ETags.
+- Additive migration for rendition metadata, edition availability/pricing and query indexes. CLI rendition generation; demo seeder keeps existing IDs and includes fictional prices and a sold-out state.
+- Backend feature/resource/validation/query/pagination checks; Flutter widget/navigation/state tests and live journey/profile instrumentation.
+- Updated API/OpenAPI, model, architecture, design, motion, decisions, runbook and testing documentation. Exact continuation is in `handoffs/PHASE_02.md`.
 
-## Verified vs pending
+## Verified
 
-See TESTING.md and evidence/verification.json. Backend migrations, seeder, tests and actual HTTP responses executed against PostgreSQL WebAssembly through PDO. PHP formatting/static analysis and OpenAPI validation passed. Dart formatting passed.
+- Original Phase 1 backend: 10 tests / 74 assertions after fixing the workspace harness's test-database environment.
+- Phase 2 including Phase 1: 20 tests / 204 assertions passed against PostgreSQL WASM via PDO pgsql.
+- Laravel Pint and PHPStan passed during implementation. OpenAPI structure and legacy response validation passed.
+- Dart source parsed/formatted with dart_style WASM; this is not Flutter analysis or a runtime test.
+- Live Phase 2 HTTP smoke and four captured response contracts passed. See `TESTING.md` and `evidence/phase-02` for evidence.
 
-Flutter startup was rejected by automatic approval review for a cloud metadata request. Flutter package resolution, analyzer, tests, app builds, screenshots and physical-device verification are NOT complete. Native PostgreSQL CI is also pending. There is no deployed site and no confirmed end-to-end Flutter/API demonstration.
+## Pending / limitations
 
-## Decisions to preserve
-
-Use Flutter and Laravel; do not replace with a web mockup. Keep photographs as the visual heroes, the API as normal data source, and the brief as the binding experience. Do not implement Phase 2 browsing/details/search prematurely. A second environment should finish the verification gate first.
-
-## Known limitations
-
-- Full Arabic UI/RTL is future work; EN/AR data fields exist now.
-- Four source-image variants are reused across six fictional works; originals and commercial licensing are not provided.
-- System typography is provisional. No device profiling or visual approval has happened.
-- Room/frame/size foundations have no configuration interface yet.
-- Flutter dependency lock and verified SDK pin still need to be created after successful resolution.
-- Production deployment/auth/admin/payment are out of scope.
+- Flutter analyzer, widget/integration tests, Android build, screenshots, accessibility and real tablet performance have not been verified in this workspace. The previous Flutter startup approval block was not bypassed.
+- Native PostgreSQL CI remains separate from the PostgreSQL WASM evidence.
+- No golden baselines were fabricated; there was no established golden suite or rendered Flutter output to approve.
+- Position restoration is in-session Back navigation, not process-death/deep-link restoration.
+- Six fictional works still reuse four source images; production photography/licensing and full Arabic UI/RTL remain outstanding.
+- Shortlist is session-memory only. Rendition orphan cleanup, conditional JSON caching in Flutter and production deployment are deferred.
+- Semantic search, wall configuration, reservations, payment, CMS and AR remain outside Phase 2.

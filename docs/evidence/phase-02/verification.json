@@ -1,0 +1,28 @@
+{
+  "baseline_commit": "09465cdb612f14121971e35f437b308d75bd3b74",
+  "baseline_phpunit": {
+    "tests": 10,
+    "assertions": 74,
+    "passed": true,
+    "engine": "PGlite via PDO pgsql",
+    "date": "2026-09-19"
+  },
+  "phase2_phpunit": {
+    "tests": 20,
+    "assertions": 204,
+    "passed": true,
+    "engine": "PGlite via PDO pgsql",
+    "date": "2026-09-19"
+  },
+  "php_pint": "passed",
+  "phpstan": "passed",
+  "openapi": "passed",
+  "phase2_live_response_contracts": 4,
+  "http_smoke": "passed 2026-10-14; see http-smoke.json",
+  "dart": "parsed/formatted using dart_style WASM, not Flutter analysis",
+  "flutter_analyzer": "not run",
+  "flutter_tests": "authored, not run",
+  "builds": "not run",
+  "android_profile": "not run",
+  "native_postgresql_ci": "pending"
+}

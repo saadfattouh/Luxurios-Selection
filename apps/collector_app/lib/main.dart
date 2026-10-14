@@ -3,6 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
 import 'core/api_client.dart';
+import 'features/discovery/data/discovery_repository.dart';
+import 'features/discovery/data/shortlist_repository.dart';
 import 'core/environment.dart';
 import 'design/tokens.dart';
 import 'features/exhibition/data/exhibition_repository.dart';
@@ -12,8 +14,13 @@ import 'features/exhibition/presentation/home_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  PaintingBinding.instance.imageCache.maximumSizeBytes = 64 * 1024 * 1024;
+  PaintingBinding.instance.imageCache.maximumSize = 40;
   runApp(
     CollectorApp(
+      discoveryRepository: ApiDiscoveryRepository(
+        ApiClient(http.Client(), Environment.apiUri),
+      ),
       repository: ApiExhibitionRepository(
         ApiClient(http.Client(), Environment.apiUri),
       ),
@@ -22,11 +29,30 @@ void main() {
 }
 
 class CollectorApp extends StatelessWidget {
-  const CollectorApp({super.key, required this.repository});
+  const CollectorApp({
+    super.key,
+    required this.repository,
+    this.discoveryRepository,
+  });
+  final DiscoveryRepository? discoveryRepository;
   final ExhibitionRepository repository;
   @override
-  Widget build(BuildContext context) => ChangeNotifierProvider(
-    create: (_) => ExhibitionViewModel(repository)..load(),
+  Widget build(BuildContext context) => MultiProvider(
+    providers: [
+      ChangeNotifierProvider(
+        create: (_) => ExhibitionViewModel(repository)..load(),
+      ),
+      Provider<DiscoveryRepository>(
+        create: (_) =>
+            discoveryRepository ??
+            ApiDiscoveryRepository(
+              ApiClient(http.Client(), Environment.apiUri),
+            ),
+      ),
+      ChangeNotifierProvider<ShortlistRepository>(
+        create: (_) => MemoryShortlistRepository(),
+      ),
+    ],
     child: MaterialApp(
       title: 'Luxurious Selection',
       debugShowCheckedModeBanner: false,

@@ -27,3 +27,13 @@ Structured JSON logs include request ID, method, path, status, and duration. Que
 ## Verification boundary
 
 PHP runs in this workspace. Native PostgreSQL cannot initialize under its mapped root-only identity; verification used PGlite (PostgreSQL compiled to WebAssembly) behind a local wire-protocol server and PDO pgsql. This is useful database evidence, not a substitute for native PostgreSQL CI. Flutter startup was blocked by automatic approval review for a cloud metadata request. No alternative UI is passed off as the Flutter application.
+
+## Phase 2 extension
+
+Home retains its entrance and curation repository. `DiscoveryRepository` is a separate replaceable interface for collection/exhibition identities, paged streams, artwork details and photographer profiles. `ApiDiscoveryRepository` shares the existing ApiClient conventions and typed models. DiscoveryViewModel handles paging, retries and generation-based stale-response suppression. Views never construct HTTP clients or use fixture data.
+
+Navigation: home → DiscoveryView → ArtworkFocusView. PageView.builder lazily builds gallery pages, keeps the page controller on the retained route and uses a stable PageStorageKey. Returning from focus preserves the exact gallery page/offset, loaded pages and filters without reloading the API. This is in-session navigation restoration; process-death/deep-link restoration is not yet implemented. Home artwork sequences also open the same focus view, with distinct Hero tags per section to avoid duplicate artwork collisions.
+
+Only the next likely hero is explicitly prefetched. Focus initially reuses hero media, then upgrades to fullscreen after 700ms. Image cache is configured to 64 MiB / 40 entries at app bootstrap; live widget-held images can exceed this cache, so this is not a total-memory guarantee. Photography is always contained, never cropped. A local ShortlistRepository has asynchronous mutation methods and change notification so Phase 5 can replace its storage behind the same view interface.
+
+Laravel discovery controllers orchestrate validation, GetArtworkStream, Eloquent and explicit resources. PublicContentCache performs representation revalidation after serialization. CLI BuildMediaRenditions performs image processing outside HTTP. No semantic provider, wall placement, reservation, payment or CMS is added.
