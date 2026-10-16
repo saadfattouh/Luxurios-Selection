@@ -265,6 +265,7 @@ class _DiscoveryViewState extends State<DiscoveryView> {
                                       button: true,
                                       label: 'Approach ${art.title.en}',
                                       child: InkWell(
+                                        key: Key('approach-${art.id}'),
                                         onTap: () => approachArtwork(
                                           context,
                                           art,

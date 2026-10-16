@@ -35,3 +35,8 @@ Flutter tests are authored but unrun here. No device performance, accessibility,
 After the Flutter acceptance checks, add intelligent search behind a separate search repository/provider interface and a documented backend endpoint. Search results should decode the existing ArtworkSummary model and invoke `approachArtwork` with unique search-result Hero tags; retain search query/result position when stepping back. Reuse publication filtering, safe structured filters, image renditions, explicit resources and Problem Details. Do not build a second artwork detail screen. Preserve all Phase 1/2 tests and the four collection experiences.
 
 Plan semantic provider/indexing, degraded behavior and a small relevance evaluation separately; none currently exists. Continue deferring wall placement to Phase 4 and persisted guest shortlist/reservation to Phase 5. Do not infer production availability or real ownership from fictional sample editions/prices.
+
+
+### Final source update — 16 October 2026
+
+Initial GitHub CI stopped at formatting gates (Pint argument spacing and Dart entrance formatting), before Flutter analysis, tests or APK build. Those source formatting issues are corrected, and the navigation test now targets a stable artwork key. At the user’s request to minimise credits, no further suites or builds were run; the final source commit skips CI. Earlier backend evidence remains valid for the tested revision, but these final corrections have not received a fresh CI pass. Flutter/device acceptance remains pending; Phase 2 is implemented, not fully acceptance-verified.

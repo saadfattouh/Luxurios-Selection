@@ -35,3 +35,8 @@ Continued `saadfattouh/Luxurios-Selection` main at `09465cdb612f14121971e35f437b
 - Six fictional works still reuse four source images; production photography/licensing and full Arabic UI/RTL remain outstanding.
 - Shortlist is session-memory only. Rendition orphan cleanup, conditional JSON caching in Flutter and production deployment are deferred.
 - Semantic search, wall configuration, reservations, payment, CMS and AR remain outside Phase 2.
+
+
+### Final source update — 16 October 2026
+
+Initial GitHub CI stopped at formatting gates (Pint argument spacing and Dart entrance formatting), before Flutter analysis, tests or APK build. Those source formatting issues are corrected, and the navigation test now targets a stable artwork key. At the user’s request to minimise credits, no further suites or builds were run; the final source commit skips CI. Earlier backend evidence remains valid for the tested revision, but these final corrections have not received a fresh CI pass. Flutter/device acceptance remains pending; Phase 2 is implemented, not fully acceptance-verified.

@@ -143,6 +143,6 @@ final class DiscoveryApiTest extends TestCase
     {
         $work = Artwork::factory()->create();
         Edition::factory()->create(['artwork_id' => $work->id]);
-        $this->getJson('/api/v1/artworks/'.$work->id)->assertOk()->assertJsonPath('data.editions.0.availability','unknown')->assertJsonPath('data.editions.0.starting_price',null);
+        $this->getJson('/api/v1/artworks/'.$work->id)->assertOk()->assertJsonPath('data.editions.0.availability', 'unknown')->assertJsonPath('data.editions.0.starting_price', null);
     }
 }

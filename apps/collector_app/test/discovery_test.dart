@@ -230,7 +230,7 @@ void main() {
         await tester.pumpAndSettle();
         final previous = pager.page;
         final art = Artwork.fromJson(artworkJson(1));
-        await tester.tap(find.bySemanticsLabel('Approach ${art.title.en}'));
+        await tester.tap(find.byKey(Key('approach-${art.id}')));
         await tester.pumpAndSettle();
         expect(find.byType(ArtworkFocusView), findsOneWidget);
         await tester.tap(find.byTooltip('Save to shortlist'));
