@@ -225,6 +225,7 @@ class _ArtworkFocusViewState extends State<ArtworkFocusView> {
         ),
         const SizedBox(height: 24),
         ExpansionTile(
+          key: PageStorageKey('photographer-${art.id}'),
           expansionAnimationStyle: MediaQuery.disableAnimationsOf(context)
               ? AnimationStyle.noAnimation
               : null,
