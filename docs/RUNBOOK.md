@@ -33,7 +33,7 @@ cd ../../apps/collector_app
 flutter pub get
 ```
 
-The Android runner is included. Flutter creates local.properties from your SDK configuration. Gradle wrapper uses Gradle 9.3.1 / AGP 9.1.0 / Kotlin 2.4.0, taken from the retrieved stable Flutter templates; compatibility must still pass the pending build gate. Do not commit SDK paths. Release signing is not configured for production.
+The Android runner is included. Flutter creates local.properties from your SDK configuration. Gradle wrapper uses Gradle 8.12 / AGP 8.9.1 / Kotlin 2.1.0, matching the Flutter 3.35.7 templates used for local Android execution. Do not commit SDK paths. Release signing is not configured for production.
 
 ## Run API and app
 
