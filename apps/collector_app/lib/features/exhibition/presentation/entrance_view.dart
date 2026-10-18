@@ -128,25 +128,25 @@ class _EntranceViewState extends State<EntranceView>
                                       Text(
                                         exhibition.title.en,
                                         style: wide
-                                            ? Theme.of(context)
-                                                  .textTheme
-                                                  .displayLarge
-                                            : Theme.of(context)
-                                                  .textTheme
-                                                  .headlineLarge,
+                                            ? Theme.of(
+                                                context,
+                                              ).textTheme.displayLarge
+                                            : Theme.of(
+                                                context,
+                                              ).textTheme.headlineLarge,
                                       ),
                                       const SizedBox(height: 24),
                                       Text(
                                         exhibition.subtitle.en,
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .bodyLarge,
+                                        style: Theme.of(
+                                          context,
+                                        ).textTheme.bodyLarge,
                                       ),
                                       const SizedBox(height: 40),
                                       FilledButton(
-                                        onPressed: () =>
-                                            Navigator.of(context)
-                                                .pushNamed('/exhibition'),
+                                        onPressed: () => Navigator.of(
+                                          context,
+                                        ).pushNamed('/exhibition'),
                                         child: const Text(
                                           'Enter Exhibition  →',
                                         ),

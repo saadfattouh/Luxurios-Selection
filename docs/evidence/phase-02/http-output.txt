@@ -1,0 +1,139 @@
+[127.0.0.1:39526]: Client connected
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 176.21ms DONE
+
+   INFO  Running migrations.  
+
+  2026_09_18_000001_create_exhibition_domain ......................... 3s DONE
+  2026_09_18_000002_create_queue_tables ........................ 351.92ms DONE
+  2026_09_19_000001_add_discovery_metadata ........................... 1s DONE
+
+
+   INFO  Seeding database.  
+
+[127.0.0.1:39526]: Client disconnected
+[Wed Oct 14 19:48:14 2026] PHP 8.3.6 Development Server (http://127.0.0.1:8000) started
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33386 Accepted
+[Wed Oct 14 15:48:14 2026] 127.0.0.1:33386 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"a5ebc629-0098-40f6-ad4a-1792c319fe7a","method":"GET","path":"api/v1/health","status":200,"duration_ms":9.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:14.649066+00:00","extra":{}}
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33386 Closing
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33400 Accepted
+[Wed Oct 14 15:48:14 2026] 127.0.0.1:33400 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"96fea2f9-f637-4e39-b20c-eec0ae875b2d","method":"GET","path":"api/v1/health","status":200,"duration_ms":8.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:14.727594+00:00","extra":{}}
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33400 Closing
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33402 Accepted
+[Wed Oct 14 15:48:14 2026] 127.0.0.1:33402 [GET] URI: /api/v1/health
+{"message":"http.completed","context":{"request_id":"13bc6abc-1738-4cec-a21b-f860ee25c1ab","method":"GET","path":"api/v1/health","status":200,"duration_ms":21.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:14.835884+00:00","extra":{}}
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33402 Closing
+[Wed Oct 14 19:48:14 2026] 127.0.0.1:33408 Accepted
+[Wed Oct 14 15:48:14 2026] 127.0.0.1:33408 [GET] URI: /api/v1/ready
+[127.0.0.1:47506]: Client connected
+{"message":"http.completed","context":{"request_id":"758d38c4-553d-4ffd-bc4e-dad682a6bf42","method":"GET","path":"api/v1/ready","status":200,"duration_ms":191.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:15.108916+00:00","extra":{}}
+[127.0.0.1:47506]: Client disconnected
+[Wed Oct 14 19:48:15 2026] 127.0.0.1:33408 Closing
+[Wed Oct 14 19:48:15 2026] 127.0.0.1:33420 Accepted
+[Wed Oct 14 15:48:15 2026] 127.0.0.1:33420 [GET] URI: /api/v1/home/curation
+[127.0.0.1:47514]: Client connected
+{"message":"http.completed","context":{"request_id":"ecb3df04-8377-48cd-9bfc-8ae287da1a90","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1788.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:16.960909+00:00","extra":{}}
+[127.0.0.1:47514]: Client disconnected
+[Wed Oct 14 19:48:16 2026] 127.0.0.1:33420 Closing
+[Wed Oct 14 19:48:16 2026] 127.0.0.1:33436 Accepted
+[Wed Oct 14 15:48:16 2026] 127.0.0.1:33436 [GET] URI: /api/v1/collections/landscape
+[127.0.0.1:47528]: Client connected
+{"message":"http.completed","context":{"request_id":"eaa1b846-2f04-44af-8cfa-efe752914321","method":"GET","path":"api/v1/collections/landscape","status":200,"duration_ms":196.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:17.223456+00:00","extra":{}}
+[127.0.0.1:47528]: Client disconnected
+[Wed Oct 14 19:48:17 2026] 127.0.0.1:33436 Closing
+[Wed Oct 14 19:48:17 2026] 127.0.0.1:33440 Accepted
+[Wed Oct 14 15:48:17 2026] 127.0.0.1:33440 [GET] URI: /api/v1/exhibitions/beyond-the-horizon/artworks
+[127.0.0.1:47542]: Client connected
+{"message":"http.completed","context":{"request_id":"d4b46817-faac-4c7f-a367-8848aa11a78e","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":565.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:17.873264+00:00","extra":{}}
+[127.0.0.1:47542]: Client disconnected
+[Wed Oct 14 19:48:17 2026] 127.0.0.1:33440 Closing
+[Wed Oct 14 19:48:17 2026] 127.0.0.1:33446 Accepted
+[Wed Oct 14 15:48:17 2026] 127.0.0.1:33446 [GET] URI: /api/v1/exhibitions/beyond-the-horizon/artworks
+[127.0.0.1:47546]: Client connected
+{"message":"http.completed","context":{"request_id":"3490b9a2-1963-44ba-b45c-d0a2a69223be","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":564.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:18.516010+00:00","extra":{}}
+[127.0.0.1:47546]: Client disconnected
+[Wed Oct 14 19:48:18 2026] 127.0.0.1:33446 Closing
+[Wed Oct 14 19:48:18 2026] 127.0.0.1:33450 Accepted
+[Wed Oct 14 15:48:18 2026] 127.0.0.1:33450 [GET] URI: /api/v1/artworks/where-silence-rises
+[127.0.0.1:58062]: Client connected
+{"message":"http.completed","context":{"request_id":"b34a3304-a51c-4f7b-926b-bd5769456cfc","method":"GET","path":"api/v1/artworks/where-silence-rises","status":200,"duration_ms":643.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:19.237678+00:00","extra":{}}
+[127.0.0.1:58062]: Client disconnected
+[Wed Oct 14 19:48:19 2026] 127.0.0.1:33450 Closing
+[Wed Oct 14 19:48:19 2026] 127.0.0.1:58956 Accepted
+[Wed Oct 14 15:48:19 2026] 127.0.0.1:58956 [GET] URI: /api/v1/artworks/where-silence-rises
+[127.0.0.1:58078]: Client connected
+{"message":"http.completed","context":{"request_id":"eef4903b-30cd-480a-bcef-664d63797dd5","method":"GET","path":"api/v1/artworks/where-silence-rises","status":304,"duration_ms":637.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:19.941255+00:00","extra":{}}
+[Wed Oct 14 19:48:19 2026] 127.0.0.1:58956 Closing
+[Wed Oct 14 19:48:19 2026] 127.0.0.1:58966 Accepted
+[127.0.0.1:58078]: Client disconnected
+[Wed Oct 14 15:48:19 2026] 127.0.0.1:58966 [GET] URI: /api/media/renditions/7617fc0f8d16b4d650dd7e559cffeb0c.jpg
+{"message":"http.completed","context":{"request_id":"d295f6c2-9f70-40b7-a9d4-06b96a507640","method":"GET","path":"api/media/renditions/7617fc0f8d16b4d650dd7e559cffeb0c.jpg","status":200,"duration_ms":14.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.029342+00:00","extra":{}}
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:58966 Closing
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:58982 Accepted
+[Wed Oct 14 15:48:20 2026] 127.0.0.1:58982 [GET] URI: /api/media/renditions/bbb66aab226c30e443909f6cdc37aed2.jpg
+{"message":"http.completed","context":{"request_id":"d7d0eb86-6c28-48dd-97cd-1a1ee4b846ed","method":"GET","path":"api/media/renditions/bbb66aab226c30e443909f6cdc37aed2.jpg","status":200,"duration_ms":13.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.109594+00:00","extra":{}}
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:58982 Closing
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:58998 Accepted
+[Wed Oct 14 15:48:20 2026] 127.0.0.1:58998 [GET] URI: /api/media/renditions/d04a375544152870e9337bc043300355.jpg
+{"message":"http.completed","context":{"request_id":"cf3668de-a2d5-478d-9fd5-f2b83efc508e","method":"GET","path":"api/media/renditions/d04a375544152870e9337bc043300355.jpg","status":200,"duration_ms":12.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.187359+00:00","extra":{}}
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:58998 Closing
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59004 Accepted
+[Wed Oct 14 15:48:20 2026] 127.0.0.1:59004 [GET] URI: /api/v1/photographers/layla-noor
+[127.0.0.1:58086]: Client connected
+{"message":"http.completed","context":{"request_id":"ac6179bf-55de-4e7e-b1f5-ce77da4fab7a","method":"GET","path":"api/v1/photographers/layla-noor","status":200,"duration_ms":197.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.452970+00:00","extra":{}}
+[127.0.0.1:58086]: Client disconnected
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59004 Closing
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59006 Accepted
+[Wed Oct 14 15:48:20 2026] 127.0.0.1:59006 [GET] URI: /api/v1/collections/landscape/artworks
+{"message":"http.completed","context":{"request_id":"fc92264f-cc61-4fc9-a5f6-8520d62aada4","method":"GET","path":"api/v1/collections/landscape/artworks","status":422,"duration_ms":15.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.532109+00:00","extra":{}}
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59006 Closing
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59012 Accepted
+[Wed Oct 14 15:48:20 2026] 127.0.0.1:59012 [GET] URI: /api/v1/artworks/missing
+[127.0.0.1:58102]: Client connected
+{"message":"http.completed","context":{"request_id":"6241a2ee-b75c-4154-a472-7d0b9b3fefb1","method":"GET","path":"api/v1/artworks/missing","status":404,"duration_ms":194.0},"level":200,"level_name":"INFO","channel":"local","datetime":"2026-10-14T15:48:20.790592+00:00","extra":{}}
+[127.0.0.1:58102]: Client disconnected
+[Wed Oct 14 19:48:20 2026] 127.0.0.1:59012 Closing
+[
+  { path: 'health', status: 200 },
+  { path: 'ready', status: 200 },
+  { path: 'home/curation', status: 200 },
+  { path: 'collections/landscape', status: 200 },
+  {
+    path: 'exhibitions/beyond-the-horizon/artworks?per_page=2',
+    status: 200
+  },
+  { path: 'next cursor', status: 200, distinct: true },
+  { path: 'artworks/where-silence-rises', status: 200 },
+  { path: 'conditional detail', status: 304 },
+  {
+    path: 'hero',
+    status: 200,
+    bytes: 248695,
+    width: 1280,
+    height: 854
+  },
+  {
+    path: 'thumbnail',
+    status: 200,
+    bytes: 44148,
+    width: 480,
+    height: 320
+  },
+  {
+    path: 'fullscreen',
+    status: 200,
+    bytes: 438521,
+    width: 1600,
+    height: 1067
+  },
+  { path: 'photographers/layla-noor', status: 200 },
+  {
+    path: 'collections/landscape/artworks?orientation=diagonal',
+    status: 422
+  },
+  { path: 'artworks/missing', status: 404 }
+]

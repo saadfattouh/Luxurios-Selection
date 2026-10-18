@@ -61,3 +61,47 @@ Every application error returns application/problem+json with type, title, statu
 ```
 
 The exact status title comes from the HTTP library and can vary between compatible versions; clients should branch on status/errors. Missing routes and models use 404; unsupported methods 405; readiness failure 503; unexpected errors 500. No stack traces are serialized.
+
+## Phase 2 — discovery and focus
+
+The Phase 1 responses and routes remain compatible. New endpoints:
+
+| Method/path | Response | Publication / payload rules |
+|---|---|---|
+| GET /exhibitions/{slug}/artworks | Cursor-paginated ArtworkSummary[] | Parent and works must be published; no story/biography/configuration data |
+| GET /collections/{slug} | Collection | Identity only: id, slug, localized title, atmosphere |
+| GET /collections/{slug}/artworks | Cursor-paginated ArtworkSummary[] | Published works only; primary media only |
+| GET /artworks/{UUID-or-slug} | Artwork | Story, photographer biography, media, editions with availability/price/sizes, collection identities |
+| GET /photographers/{UUID-or-slug} | Photographer | 404 unless at least one artwork is publicly published |
+
+`GET /exhibitions/{slug}` retains its Phase 1 published-hero behavior. Empty collections return 200 with an empty stream. Missing/draft/future artwork or exhibition returns 404 Problem Details. Normal UI data uses these APIs; no fixture fallback.
+
+### Stable artwork paging and filters
+
+Streams sort by immutable artwork UUID ascending, with a unique keyset cursor. This deliberately differs from the editable home editorial order. Pass `meta.next_cursor` back as `cursor`; null means the end. Responses also include `links` and `meta.per_page`, `path`, `prev_cursor`. No total-count query runs. `per_page` is 1–24 (default 12). Cursor values are opaque navigation tokens, not authorization tokens. A cursor is not a frozen catalog snapshot: newly inserted IDs before the current boundary appear on a fresh visit; deletions/publication/availability changes may remove items. Existing rows do not shift as with offset pagination. Reset the cursor when filters or parent change.
+
+| Filter | Allowed values |
+|---|---|
+| orientation | landscape / portrait / square; compares width and height of primary media at position 0 |
+| collection | collection slug |
+| photographer | photographer UUID or slug |
+| availability | available / sold_out / unavailable / unknown |
+| edition_status | limited / open |
+
+Filters combine with AND. Availability and edition status must match the same edition. Unsupported query keys, malformed cursors and invalid values return 422. There is no arbitrary sort, include, SQL, or search expression. Flutter currently exposes orientation, availability and edition type refinements. Parent collection/exhibition determines the stream; photographer and cross-collection filtering are also API-ready.
+
+```http
+GET /api/v1/exhibitions/beyond-the-horizon/artworks?per_page=2&collection=landscape&availability=available
+```
+
+Summary fields: id, slug, localized title, photographer identity/name (without bio), at most one media record, nullable edition_summary (is_limited and nullable total), and availability. No per-work detail requests happen during scrolling. Detail editions add `availability`, nullable `starting_price: {amount_minor, currency}`, and `sizes: [{id, label, width_mm, height_mm}]`. Sizes and prices are indicative; no physical configuration or inventory reservation is implied. Mixed unavailable edition states serialize summary availability as unknown; any available edition makes the summary available.
+
+### Display media
+
+Media preserves legacy `url`, width/height, alt, credit and source_url. Additive fields: aspect_ratio, nullable dominant_color (`#RRGGBB`), and `renditions` with optional thumbnail/hero/fullscreen objects, each containing url, width, height, aspect_ratio. Longest-edge caps are 480/1280/1920 pixels without upscaling or cropping. Alt text is localized at media level and applies to all renditions. The UI uses the dominant color while decoding and falls back to the legacy URL if renditions are absent.
+
+Run `php artisan media:renditions` for existing public display media. The sample seeder builds them automatically. Generation is a CLI operation, never a read request. Files have content-hashed names. Public disk rendition URLs use the existing `/api/media/{path}` route with configured CORS; S3 uses the storage URL resolver. Legacy `/storage` URLs remain unchanged for compatibility. `/api/media` rejects traversal, arbitrary disks and non-image extensions. CORS is configured centrally rather than fixed to one origin.
+
+### Public content revalidation
+
+Successful v1 content GETs emit ETag based on the entire serialized body plus `Cache-Control: public, max-age=0, must-revalidate` and Vary Accept/Origin. `If-None-Match` returns bodyless 304 when unchanged, including when related editions/media are unchanged. This saves transfer, not database work. No shared response cache or stale inventory is introduced. Flutter currently fetches JSON normally; native/browser image caches handle media. The media route has a one-hour public cache. Health/readiness remain uncached.

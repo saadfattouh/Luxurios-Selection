@@ -1,0 +1,124 @@
+[127.0.0.1:59914]: Client connected
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 179.69ms DONE
+
+   INFO  Running migrations.  
+
+  2026_09_18_000001_create_exhibition_domain ......................... 3s DONE
+  2026_09_18_000002_create_queue_tables ........................ 356.08ms DONE
+  2026_09_19_000001_add_discovery_metadata ........................... 1s DONE
+
+
+   INFO  Seeding database.  
+
+[127.0.0.1:59914]: Client disconnected
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.6
+Configuration: /workspace/scratch/fadb682e3f1d/luxurious-selection/services/api/phpunit.xml
+
+[127.0.0.1:33504]: Client connected
+{"message":"http.completed","context":{"request_id":"5e124cd1-3e16-4926-b598-5436ec32f3d5","method":"GET","path":"api/v1/collections/landscape","status":200,"duration_ms":105.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:28.378630+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"fe897d6e-a86c-4e62-86f9-561ef0d6b127","method":"GET","path":"api/v1/collections/landscape/artworks","status":200,"duration_ms":459.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:28.848958+00:00","extra":{}}
+[127.0.0.1:33504]: Client disconnected
+.[127.0.0.1:47694]: Client connected
+{"message":"http.completed","context":{"request_id":"5942486f-2e7c-4fec-870d-268dadde39e7","method":"GET","path":"api/v1/artworks/where-silence-rises","status":200,"duration_ms":536.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:39.847637+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"538eebe3-d430-4572-81e6-e6d1e3415736","method":"GET","path":"api/v1/artworks/00000000-0000-4000-8000-000000000100","status":200,"duration_ms":532.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:40.383075+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"9314a84a-1c5f-44db-9bf0-371028d19ef4","method":"GET","path":"api/v1/photographers/layla-noor","status":200,"duration_ms":90.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:40.473752+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"d3dca001-a271-441e-bbd1-948aa677ca10","method":"GET","path":"api/v1/photographers/00000000-0000-4000-8000-000000000001","status":200,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:40.566170+00:00","extra":{}}
+[127.0.0.1:47694]: Client disconnected
+.[127.0.0.1:41554]: Client connected
+{"message":"http.completed","context":{"request_id":"7b76558a-4456-4679-8aca-72da8f3adeb2","method":"GET","path":"api/v1/artworks/where-silence-rises","status":404,"duration_ms":90.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.296612+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"11796724-332a-4fb6-81e4-dee598fba92c","method":"GET","path":"api/v1/photographers/layla-noor","status":404,"duration_ms":88.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.386096+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"bbc6bf6e-b1ef-48c7-84a7-872e513b82e3","method":"GET","path":"api/v1/collections/landscape/artworks","status":200,"duration_ms":179.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.566007+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"42fc3d7e-8a4d-40ea-9747-10d87e7921a4","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":404,"duration_ms":88.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.742069+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"1f3f703a-d916-4b9e-af44-0dec734d0bf5","method":"GET","path":"api/v1/artworks/not-found","status":404,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.834153+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"2b627bd2-ef5e-4dd3-ba18-277c47924343","method":"GET","path":"api/v1/collections/not-found","status":404,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:51.926543+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"4f9cc55b-2a68-4c49-807b-69dd8e333a6c","method":"GET","path":"api/v1/photographers/not-found","status":404,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:52.018112+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"be615d60-d949-4199-99b7-8134cc2b0a44","method":"GET","path":"api/v1/exhibitions/not-found","status":404,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:33:52.110275+00:00","extra":{}}
+.[127.0.0.1:41554]: Client disconnected
+[127.0.0.1:36094]: Client connected
+{"message":"http.completed","context":{"request_id":"180a077b-2081-4484-a773-fd9df2392b2b","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":459.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.070933+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"76cffcbe-bc77-4de6-9db9-0cdd97cef5c0","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":442.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.514577+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"8700c778-e166-4e9f-9615-ee54ff7d06cb","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":178.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.694097+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"ef08bb4d-5b36-4ab4-be1f-a0fda5d48cbe","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":3.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.697698+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"5b24b3d5-60bd-4821-9d9b-0a6b088dca4a","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.699795+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"71568d1c-716d-4d95-bae4-4d2e4459b160","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.701728+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"75ac125f-3afd-4fa5-bf19-962c781636e5","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.703568+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"5239dbfe-0d4d-4e7b-b93c-f5a789e6c7e9","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.705484+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"61cae2b8-6942-4534-a063-a3258ebb1fe4","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.707551+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"0ac32beb-9eb6-4b96-922f-b56d010b4bff","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.709278+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"4224ac06-7888-4da3-978c-b5e00ed2f2c1","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":2.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.711917+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"d1b5c3ef-a49d-45b2-a5fc-6ed8b8bad7d7","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:03.713950+00:00","extra":{}}
+[127.0.0.1:36094]: Client disconnected
+.[127.0.0.1:39002]: Client connected
+{"message":"http.completed","context":{"request_id":"c567963c-cbcd-48ea-8c19-d7dd6301287d","method":"GET","path":"api/v1/collections/landscape/artworks","status":200,"duration_ms":455.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:14.846838+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"ba50c869-8c84-40ad-969f-c1588cdfc016","method":"GET","path":"api/v1/collections/landscape/artworks","status":200,"duration_ms":180.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:15.214178+00:00","extra":{}}
+[127.0.0.1:39002]: Client disconnected
+.[127.0.0.1:51384]: Client connected
+{"message":"http.completed","context":{"request_id":"b70e23e4-6cc2-4c4c-bc22-f210e635f12f","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":448.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:26.330676+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"a5fb8276-bd01-41a8-8c6e-ece76a02eced","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":441.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:27.130527+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"03096e09-9fd0-4160-a9ea-b049407c1346","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":443.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:27.574520+00:00","extra":{}}
+.[127.0.0.1:51384]: Client disconnected
+[127.0.0.1:57470]: Client connected
+{"message":"http.completed","context":{"request_id":"56d637a1-caa4-4a12-8afa-2ac90ca9fa59","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":444.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:38.430470+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"8a0b9759-1472-4e82-b9cb-146b4795ca96","method":"GET","path":"api/v1/exhibitions/beyond-the-horizon/artworks","status":200,"duration_ms":444.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:38.875178+00:00","extra":{}}
+[127.0.0.1:57470]: Client disconnected
+.[127.0.0.1:56044]: Client connected
+{"message":"http.completed","context":{"request_id":"6c433be1-2384-45c2-98f9-6a088fb930f1","method":"GET","path":"api/v1/artworks/where-silence-rises","status":200,"duration_ms":528.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:49.866824+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"c2eb4dca-c6e2-46ac-8242-c9e966f0bf1f","method":"GET","path":"api/v1/artworks/where-silence-rises","status":304,"duration_ms":536.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:50.403533+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"bec7e236-c9c1-4147-9099-05e9d0d518a6","method":"GET","path":"api/v1/artworks/where-silence-rises","status":200,"duration_ms":529.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:34:51.022810+00:00","extra":{}}
+.[127.0.0.1:56044]: Client disconnected
+[127.0.0.1:47264]: Client connected
+{"message":"http.completed","context":{"request_id":"2d2f595d-bb59-4de0-aea4-e1c8fa68aaaf","method":"GET","path":"api/v1/artworks/where-silence-rises","status":200,"duration_ms":532.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:01.955277+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"d88ff1ed-fcc0-4830-8060-1b76d546b8f5","method":"GET","path":"api/media/renditions/bbb66aab226c30e443909f6cdc37aed2.jpg","status":200,"duration_ms":8.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:01.965079+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"7db6796f-4ebf-4b66-a1bc-20da3e2070fe","method":"GET","path":"api/media/renditions/7617fc0f8d16b4d650dd7e559cffeb0c.jpg","status":200,"duration_ms":3.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:01.969433+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"003fbfbe-719b-4226-8849-4c21135ee17f","method":"GET","path":"api/media/renditions/d04a375544152870e9337bc043300355.jpg","status":200,"duration_ms":4.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:01.973885+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"3b11fb04-869a-4ce6-86a5-77d35d58bad7","method":"GET","path":"api/media/../.env","status":404,"duration_ms":0.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:01.975232+00:00","extra":{}}
+[127.0.0.1:47264]: Client disconnected
+.[127.0.0.1:48998]: Client connected
+{"message":"http.completed","context":{"request_id":"a83ebe7d-8602-445d-8521-71d20b4bea04","method":"GET","path":"api/v1/artworks/01a0b93b-d896-7352-b27d-c540bd0f9453","status":200,"duration_ms":536.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:02.879227+00:00","extra":{}}
+[127.0.0.1:48998]: Client disconnected
+.[127.0.0.1:49012]: Client connected
+{"message":"http.completed","context":{"request_id":"f6e8298e-59fd-4b61-864b-bd99cf2c0d94","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1699.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:22.525076+00:00","extra":{}}
+[127.0.0.1:49012]: Client disconnected
+.[127.0.0.1:60596]: Client connected
+{"message":"http.completed","context":{"request_id":"4be36422-a2ad-4d40-a501-d9842cfbf978","method":"GET","path":"api/v1/exhibitions","status":200,"duration_ms":550.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:23.972133+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"039f9a4f-31dc-416f-9742-41ac71a7db04","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":6.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:23.981800+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"e85c358e-1783-4ef0-baf4-caa06533cd0b","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:23.983946+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"cb5690f0-745c-4904-bac9-bfe0612a18e4","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:23.986015+00:00","extra":{}}
+[127.0.0.1:60596]: Client disconnected
+.[127.0.0.1:60602]: Client connected
+{"message":"http.completed","context":{"request_id":"676aff2f-3397-4c2a-a2b1-8bf5ebc1394e","method":"GET","path":"api/v1/exhibitions","status":200,"duration_ms":92.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:24.706103+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"1d01335a-4def-46bc-ac21-b7bebc9e2b2a","method":"GET","path":"api/v1/exhibitions/quia-voluptatem-debitis-soluta","status":404,"duration_ms":94.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:24.801568+00:00","extra":{}}
+[127.0.0.1:60602]: Client disconnected
+.[127.0.0.1:60606]: Client connected
+{"message":"http.completed","context":{"request_id":"e2ca743e-0a00-4ab2-81a5-cf76ce681590","method":"GET","path":"api/v1/exhibitions/cumque-doloribus-qui-sint","status":200,"duration_ms":176.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:25.345829+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"167e12bc-958c-4ad4-adfe-e6a726ecebd4","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":624.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:25.971295+00:00","extra":{}}
+[127.0.0.1:60606]: Client disconnected
+.[127.0.0.1:60610]: Client connected
+{"message":"http.completed","context":{"request_id":"e6702e0e-f776-4755-895a-28d98b96e27f","method":"POST","path":"api/v1/exhibitions","status":405,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:26.072286+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"bb9ab234-319d-4fb9-883f-ee264365eea5","method":"GET","path":"api/v1/missing","status":404,"duration_ms":0.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:26.073407+00:00","extra":{}}
+[127.0.0.1:60610]: Client disconnected
+.[127.0.0.1:60624]: Client connected
+{"message":"http.completed","context":{"request_id":"d117dedb-ec42-4d51-ac42-0f678776c58f","method":"GET","path":"api/v1/health","status":200,"duration_ms":0.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:26.175088+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"c18939e1-228c-4497-a685-6acda1734484","method":"GET","path":"api/v1/ready","status":200,"duration_ms":89.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:26.265275+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"943dd806-1757-488a-b2ab-472a8f7a87c1","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":535.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:26.801622+00:00","extra":{}}
+[127.0.0.1:60624]: Client disconnected
+.[127.0.0.1:60626]: Client connected
+{"message":"http.completed","context":{"request_id":"7a9db735-6864-4744-a0d7-27e5a98d979b","method":"GET","path":"api/v1/collections","status":200,"duration_ms":179.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:37.446459+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"8849c534-393d-492f-9328-e48634af282d","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1695.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:39.142248+00:00","extra":{}}
+[127.0.0.1:60626]: Client disconnected
+.[127.0.0.1:35918]: Client connected
+{"message":"private database detail","context":{"request_id":"ab26432c-4dfd-499f-b9f0-ea226acd0124","exception":{"class":"RuntimeException","message":"private database detail","code":0,"file":"/workspace/scratch/fadb682e3f1d/luxurious-selection/services/api/tests/Feature/ExhibitionApiTest.php:87"}},"level":400,"level_name":"ERROR","channel":"testing","datetime":"2026-09-19T10:35:39.252232+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"ab26432c-4dfd-499f-b9f0-ea226acd0124","method":"GET","path":"api/v1/ready","status":503,"duration_ms":4.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:35:39.252778+00:00","extra":{}}
+[127.0.0.1:35918]: Client disconnected
+.[127.0.0.1:35934]: Client connected
+[127.0.0.1:35934]: Client disconnected
+..                                              20 / 20 (100%)
+
+Time: 02:28.669, Memory: 50.50 MB
+
+OK (20 tests, 204 assertions)

@@ -20,7 +20,9 @@ class ApiClient {
           .timeout(const Duration(seconds: 12));
       if (response.statusCode != 200) {
         throw ApiFailure(
-          'The exhibition is temporarily unavailable.',
+          response.statusCode == 404
+              ? 'This photograph or exhibition is no longer available.'
+              : 'The exhibition is temporarily unavailable.',
           requestId: response.headers['x-request-id'],
         );
       }

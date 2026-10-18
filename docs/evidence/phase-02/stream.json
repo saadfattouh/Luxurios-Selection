@@ -1,0 +1,130 @@
+{
+  "data": [
+    {
+      "id": "00000000-0000-4000-8000-000000000100",
+      "slug": "where-silence-rises",
+      "title": {
+        "en": "Where silence rises",
+        "ar": "حيث يرتفع الصمت"
+      },
+      "photographer": {
+        "id": "00000000-0000-4000-8000-000000000001",
+        "slug": "layla-noor",
+        "name": {
+          "en": "Layla Noor",
+          "ar": "ليلى نور"
+        }
+      },
+      "media": [
+        {
+          "id": "00000000-0000-4000-8000-000000000200",
+          "url": "http://localhost:8000/storage/demo/landscape.jpg",
+          "alt": {
+            "en": "A mountain rising through clouds",
+            "ar": "جبل يرتفع بين السحب"
+          },
+          "width": 1600,
+          "height": 1067,
+          "aspect_ratio": 1.499531396438613,
+          "dominant_color": "#56686B",
+          "renditions": {
+            "hero": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/7617fc0f8d16b4d650dd7e559cffeb0c.jpg",
+              "width": 1280,
+              "height": 854,
+              "aspect_ratio": 1.4988290398126465
+            },
+            "thumbnail": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/bbb66aab226c30e443909f6cdc37aed2.jpg",
+              "width": 480,
+              "height": 320,
+              "aspect_ratio": 1.5
+            },
+            "fullscreen": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/d04a375544152870e9337bc043300355.jpg",
+              "width": 1600,
+              "height": 1067,
+              "aspect_ratio": 1.499531396438613
+            }
+          },
+          "credit": "Unsplash reference image; fictional artwork attribution",
+          "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+        }
+      ],
+      "edition_summary": {
+        "is_limited": true,
+        "total": 10
+      },
+      "availability": "available"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000101",
+      "slug": "a-line-of-light",
+      "title": {
+        "en": "A line of light",
+        "ar": "خيط من ضوء"
+      },
+      "photographer": {
+        "id": "00000000-0000-4000-8000-000000000001",
+        "slug": "layla-noor",
+        "name": {
+          "en": "Layla Noor",
+          "ar": "ليلى نور"
+        }
+      },
+      "media": [
+        {
+          "id": "00000000-0000-4000-8000-000000000201",
+          "url": "http://localhost:8000/storage/demo/architecture.jpg",
+          "alt": {
+            "en": "Architectural forms against the sky",
+            "ar": "تكوينات معمارية في مواجهة السماء"
+          },
+          "width": 1400,
+          "height": 933,
+          "aspect_ratio": 1.5005359056806002,
+          "dominant_color": "#60656A",
+          "renditions": {
+            "hero": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/1cd2ea4f0f4e4bf5ead9bbc68baedc23.jpg",
+              "width": 1280,
+              "height": 853,
+              "aspect_ratio": 1.5005861664712778
+            },
+            "thumbnail": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/b259ac37599fb7f84fe1d35e2f5ff706.jpg",
+              "width": 480,
+              "height": 320,
+              "aspect_ratio": 1.5
+            },
+            "fullscreen": {
+              "url": "http://127.0.0.1:8000/api/media/renditions/efa5d0248b32034615e873c890e924ac.jpg",
+              "width": 1400,
+              "height": 933,
+              "aspect_ratio": 1.5005359056806002
+            }
+          },
+          "credit": "Unsplash reference image; fictional artwork attribution",
+          "source_url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2"
+        }
+      ],
+      "edition_summary": {
+        "is_limited": true,
+        "total": 15
+      },
+      "availability": "available"
+    }
+  ],
+  "links": {
+    "first": null,
+    "last": null,
+    "prev": null,
+    "next": "http://127.0.0.1:8000/api/v1/exhibitions/beyond-the-horizon/artworks?per_page=2&cursor=eyJpZCI6IjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDEwMSIsIl9wb2ludHNUb05leHRJdGVtcyI6dHJ1ZX0"
+  },
+  "meta": {
+    "path": "http://127.0.0.1:8000/api/v1/exhibitions/beyond-the-horizon/artworks",
+    "per_page": 2,
+    "next_cursor": "eyJpZCI6IjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDEwMSIsIl9wb2ludHNUb05leHRJdGVtcyI6dHJ1ZX0",
+    "prev_cursor": null
+  }
+}

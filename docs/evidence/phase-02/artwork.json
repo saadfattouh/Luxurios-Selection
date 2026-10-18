@@ -1,0 +1,101 @@
+{
+  "data": {
+    "id": "00000000-0000-4000-8000-000000000100",
+    "slug": "where-silence-rises",
+    "title": {
+      "en": "Where silence rises",
+      "ar": "حيث يرتفع الصمت"
+    },
+    "story": {
+      "en": "A study in presence, distance and the spaces we leave untouched. Fictional exhibition work using a credited reference image.",
+      "ar": "تأمل في الحضور والمسافة والمساحات التي نتركها على حالها. عمل خيالي للعرض التجريبي بصورة مرجعية موثقة."
+    },
+    "published_at": "2026-09-10T12:00:00+04:00",
+    "photographer": {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "slug": "layla-noor",
+      "name": {
+        "en": "Layla Noor",
+        "ar": "ليلى نور"
+      },
+      "bio": {
+        "en": "A fictional artist exploring the quiet between landscape and light. Reference photographs are credited individually.",
+        "ar": "شخصية فنية خيالية تتأمل السكون بين الطبيعة والضوء. تُنسب الصور المرجعية إلى مصادرها بشكل مستقل."
+      }
+    },
+    "media": [
+      {
+        "id": "00000000-0000-4000-8000-000000000200",
+        "url": "http://localhost:8000/storage/demo/landscape.jpg",
+        "alt": {
+          "en": "A mountain rising through clouds",
+          "ar": "جبل يرتفع بين السحب"
+        },
+        "width": 1600,
+        "height": 1067,
+        "aspect_ratio": 1.499531396438613,
+        "dominant_color": "#56686B",
+        "renditions": {
+          "hero": {
+            "url": "http://127.0.0.1:8000/api/media/renditions/7617fc0f8d16b4d650dd7e559cffeb0c.jpg",
+            "width": 1280,
+            "height": 854,
+            "aspect_ratio": 1.4988290398126465
+          },
+          "thumbnail": {
+            "url": "http://127.0.0.1:8000/api/media/renditions/bbb66aab226c30e443909f6cdc37aed2.jpg",
+            "width": 480,
+            "height": 320,
+            "aspect_ratio": 1.5
+          },
+          "fullscreen": {
+            "url": "http://127.0.0.1:8000/api/media/renditions/d04a375544152870e9337bc043300355.jpg",
+            "width": 1600,
+            "height": 1067,
+            "aspect_ratio": 1.499531396438613
+          }
+        },
+        "credit": "Unsplash reference image; fictional artwork attribution",
+        "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+      }
+    ],
+    "editions": [
+      {
+        "id": "00000000-0000-4000-8000-000000000400",
+        "label": {
+          "en": "Collector edition",
+          "ar": "إصدار لهواة الاقتناء"
+        },
+        "is_limited": true,
+        "total": 10,
+        "availability": "available",
+        "starting_price": {
+          "amount_minor": 450000,
+          "currency": "AED"
+        },
+        "sizes": [
+          {
+            "id": "00000000-0000-4000-8000-000000000300",
+            "label": {
+              "en": "100 × 70 cm",
+              "ar": "١٠٠ × ٧٠ سم"
+            },
+            "width_mm": 1000,
+            "height_mm": 700
+          }
+        ]
+      }
+    ],
+    "collections": [
+      {
+        "id": "00000000-0000-4000-8000-000000000012",
+        "slug": "landscape",
+        "title": {
+          "en": "Landscape",
+          "ar": "المناظر الطبيعية"
+        },
+        "atmosphere": "expansive"
+      }
+    ]
+  }
+}

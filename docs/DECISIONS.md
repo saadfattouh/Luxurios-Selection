@@ -23,3 +23,16 @@
 - PostgreSQL wire adapter used for temporary verification: https://github.com/kamilogorek/pglite-server
 
 Dependency versions for PHP are fixed by composer.lock. Flutter package versions are constrained in pubspec.yaml; a pubspec.lock cannot honestly be supplied until package resolution succeeds in an authorized Flutter environment. CI currently uses stable Flutter; pin the verified SDK and commit pubspec.lock after that gate succeeds.
+
+## Phase 2 decisions — 2026-09-19
+
+| ID | Decision | Reason |
+|---|---|---|
+| 013 | Continue GitHub main at 09465cdb612f14121971e35f437b308d75bd3b74 | User supplied the current repository; preserve its CORS/runner/lockfile changes. |
+| 014 | Separate discovery repository; retain Phase 1 contracts | Avoid breaking existing entrance/home clients and test doubles. |
+| 015 | UUID keyset order for artwork streams | Stable unique navigation without offset shifts; editorial home order stays unchanged. |
+| 016 | Explicit unknown availability and nullable prices | Do not infer saleability, stock, or price from an edition total. |
+| 017 | CLI display renditions, public-media CORS route retained | No image processing in reads; S3 abstraction unchanged; preserve legacy URLs. |
+| 018 | ETag revalidation rather than stale response caching | Relationships affect price/availability; hash complete serialized body. |
+| 019 | Retained routes and async shortlist interface | Exact in-session return position and replaceable Phase 5 persistence. |
+| 020 | Continue authorized Phase 2 source work while reporting runtime gaps | User explicitly began Phase 2; stale Phase 1 gate text does not override that request. Flutter/device acceptance remains pending and is not claimed complete. |

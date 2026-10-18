@@ -1,5 +1,7 @@
 # Testing and verification
 
+## Phase 1 historical results
+
 Evidence is recorded in evidence/verification.json, evidence/http-smoke.json and evidence/curation.json. No unrun Flutter test is reported as passing.
 
 | Check | Result | Scope |
@@ -36,3 +38,22 @@ PHPUnit forces APP_ENV=testing and DB_DATABASE=luxurious_test. TestCase checks t
 Flutter fixture JSON is an exact real API snapshot. Layout tests target 1280×800, 800×1280 and 390×844 with large text and reduced motion. They use a fake repository; the separate integration test uses the actual configured API. No fixture fallback exists in production.
 
 Before Phase 2, all pending gates above must pass and actual Flutter screenshots should be committed or attached with device/viewport details. Run commands are in RUNBOOK.md; infra/verify.sh is the normal consolidated check.
+
+
+## Phase 2 results and remaining gates
+
+Evidence: `evidence/phase-02`. Original baseline checkout tests: 10 / 74 assertions. Extended suite: **20 / 204 assertions passed**, preserving the original tests. PostgreSQL SQL was executed through the PGlite wire harness and PDO pgsql, not SQLite. This does not claim native PostgreSQL CI passed.
+
+The initial attempt was blocked by missing tools/dependencies. PHP 8.3.6 and required extensions were then extracted into a temporary directory. The inherited harness supplied DB_DATABASE=luxurious even to PHPUnit; the database guard correctly rejected it. Setting the test child explicitly to luxurious_test fixed the harness without weakening TestCase's guard. Original Pint issues were confined to the media route and CORS configuration; these files were refined as part of Phase 2.
+
+Laravel Pint and PHPStan passed. OpenAPI 3.0.3 structure and the recorded legacy curation payload validate. Dart files were parsed/formatted with the dart_style WASM package; that does not replace Flutter analyzer or widget execution.
+
+New backend coverage: lightweight serialization, UUID/slug details, safe publication/404 behavior, combined filters on the same edition, malformed query/cursor validation, cursor insertion stability, bounded query count, ETag 304 and edition invalidation, real rendition/CORS reads, and unknown availability/price preservation.
+
+New authored Flutter coverage: four atmospheres at tablet/phone with enlarged text; API query encoding; late-response suppression; retry; local shortlist; approach/reveal/Back page restoration with and without reduced motion; missing-image/partial detail; live seeded journey and profile instrumentation. These tests have **not run** here. No golden baselines or screenshots are supplied, because no actual Flutter render was produced. Existing Phase 1 widget tests remain.
+
+Performance: longest-edge rendition caps 480/1280/1920, lazy PageView construction, only next hero prefetch, fullscreen fetched only on focus, and 64 MiB / 40-entry image cache are implemented controls. They are not device measurements. Full image-memory usage, first meaningful display, scroll/frame stability, transition smoothness and TalkBack require the Android profile run in RUNBOOK. No APK/web build was run in this task.
+
+Live Phase 2 HTTP smoke passed on resumption: identities, paged stream with distinct next page, detail, photographer, conditional 304, three actual image rendition reads with CORS, invalid filter 422 and missing artwork 404. Four captured Phase 2 response contracts also validate. The representative landscape returned 480×320 thumbnail (44,148 bytes) and 1600×1067 fullscreen (438,521 bytes; no upscaling). These are asset measurements, not tablet memory/latency figures.
+
+CI keeps the existing test suites and one Android build gate. Feature branches run on pull requests; main still runs on push, avoiding duplicate branch push/PR builds. The redundant web build was removed from CI; no new local build was run.

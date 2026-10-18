@@ -1,0 +1,61 @@
+[127.0.0.1:33386]: Client connected
+
+   INFO  Preparing database.  
+
+  Creating migration table ..................................... 183.55ms DONE
+
+   INFO  Running migrations.  
+
+  2026_09_18_000001_create_exhibition_domain ......................... 3s DONE
+  2026_09_18_000002_create_queue_tables ........................ 352.37ms DONE
+
+
+   INFO  Seeding database.  
+
+[127.0.0.1:33386]: Client disconnected
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.6
+Configuration: /workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/phpunit.xml
+
+[127.0.0.1:46416]: Client connected
+{"message":"http.completed","context":{"request_id":"07af9933-5533-4135-bef8-30e856737ade","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1714.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:32.440259+00:00","extra":{}}
+[127.0.0.1:46416]: Client disconnected
+.[127.0.0.1:58620]: Client connected
+{"message":"http.completed","context":{"request_id":"cd0cb1ef-a7aa-4016-b9c8-6ce0ea963ed6","method":"GET","path":"api/v1/exhibitions","status":200,"duration_ms":546.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:33.940876+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"42d0eff0-3d4b-47a2-bf5a-eae55fb34337","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":5.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:33.947352+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"4c1caa50-8eab-4736-a2ed-07bcd455bbe3","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":2.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:33.950834+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"1171fbfc-4c82-48cf-b022-adbec3336de6","method":"GET","path":"api/v1/exhibitions","status":422,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:33.952871+00:00","extra":{}}
+[127.0.0.1:58620]: Client disconnected
+.[127.0.0.1:58632]: Client connected
+{"message":"http.completed","context":{"request_id":"2c39f216-7bed-4f82-9945-74bafded786b","method":"GET","path":"api/v1/exhibitions","status":200,"duration_ms":91.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:34.670074+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"116bf1b8-0587-45ac-86b4-be7e5655c28c","method":"GET","path":"api/v1/exhibitions/nihil-sed-rerum","status":404,"duration_ms":92.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:34.762969+00:00","extra":{}}
+[127.0.0.1:58632]: Client disconnected
+.[127.0.0.1:58646]: Client connected
+{"message":"http.completed","context":{"request_id":"aa76496b-f1a7-4d02-9e5d-5ea8533f32f9","method":"GET","path":"api/v1/exhibitions/provident-incidunt-voluptas","status":200,"duration_ms":176.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:35.313912+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"67d83950-03c8-4a22-971d-b4e4779a0f99","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":627.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:35.941861+00:00","extra":{}}
+.[127.0.0.1:58646]: Client disconnected
+[127.0.0.1:58650]: Client connected
+{"message":"http.completed","context":{"request_id":"be2c7092-406c-4267-8a5d-706cc1dc0714","method":"POST","path":"api/v1/exhibitions","status":405,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:36.040028+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"c0bb6174-135b-40ac-a415-7ba1358b614b","method":"GET","path":"api/v1/missing","status":404,"duration_ms":0.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:36.041140+00:00","extra":{}}
+[127.0.0.1:58650]: Client disconnected
+.[127.0.0.1:58658]: Client connected
+{"message":"http.completed","context":{"request_id":"8584ced8-0dda-417e-9fbf-e4382f4c7d41","method":"GET","path":"api/v1/health","status":200,"duration_ms":1.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:36.144402+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"bb88afc1-4701-449c-be8a-0385210f5be0","method":"GET","path":"api/v1/ready","status":200,"duration_ms":88.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:36.233388+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"9771b874-3b9b-4a39-a417-dcfe76b8662a","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":531.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:36.765810+00:00","extra":{}}
+[127.0.0.1:58658]: Client disconnected
+.[127.0.0.1:58672]: Client connected
+{"message":"http.completed","context":{"request_id":"681eac8c-3af8-4d3e-bae5-c2c98f0b1013","method":"GET","path":"api/v1/collections","status":200,"duration_ms":176.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:45.010285+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"757da6aa-dca6-4654-bb4c-2571ec464299","method":"GET","path":"api/v1/home/curation","status":200,"duration_ms":1688.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:46.698900+00:00","extra":{}}
+[127.0.0.1:58672]: Client disconnected
+.[127.0.0.1:36554]: Client connected
+{"message":"private database detail","context":{"request_id":"dc98170a-4c63-4db0-aef3-96e4728cc8a6","exception":{"class":"RuntimeException","message":"private database detail","code":0,"file":"/workspace/scratch/fadb682e3f1d/phase1-baseline/services/api/tests/Feature/ExhibitionApiTest.php:87"}},"level":400,"level_name":"ERROR","channel":"testing","datetime":"2026-09-19T10:30:46.811750+00:00","extra":{}}
+{"message":"http.completed","context":{"request_id":"dc98170a-4c63-4db0-aef3-96e4728cc8a6","method":"GET","path":"api/v1/ready","status":503,"duration_ms":5.0},"level":200,"level_name":"INFO","channel":"testing","datetime":"2026-09-19T10:30:46.812711+00:00","extra":{}}
+[127.0.0.1:36554]: Client disconnected
+.[127.0.0.1:36558]: Client connected
+[127.0.0.1:36558]: Client disconnected
+..                                                        10 / 10 (100%)
+
+Time: 00:35.300, Memory: 46.50 MB
+
+OK (10 tests, 74 assertions)

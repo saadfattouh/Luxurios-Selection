@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
+use App\Actions\BuildMediaRenditions;
 use App\Models\Artwork;
 use App\Models\ArtworkMedia;
 use App\Models\Collection;
@@ -65,8 +66,9 @@ final class DatabaseSeeder extends Seeder
                 $source = match ($a[3]) {
                     'architecture' => 'photo-1511818966892-d7d671e672a2','wildlife' => 'photo-1546182990-dffeafbe841d',default => 'photo-1464822759023-fed622ff2c3b'
                 };
-                $this->put(ArtworkMedia::class, 200 + $i, ['artwork_id' => $art->id, 'disk' => config('filesystems.default'), 'path' => 'demo/'.$a[3].'.jpg', 'alt_en' => $a[5], 'alt_ar' => $a[6], 'width' => $dim[0], 'height' => $dim[1], 'position' => 0, 'credit' => 'Unsplash reference image; fictional artwork attribution', 'source_url' => 'https://images.unsplash.com/'.$source]);
-                $edition = $this->put(Edition::class, 400 + $i, ['artwork_id' => $art->id, 'label_en' => 'Collector edition', 'label_ar' => 'إصدار لهواة الاقتناء', 'is_limited' => true, 'total' => 10 + $i * 5]);
+                $media = $this->put(ArtworkMedia::class, 200 + $i, ['artwork_id' => $art->id, 'disk' => config('filesystems.default'), 'path' => 'demo/'.$a[3].'.jpg', 'alt_en' => $a[5], 'alt_ar' => $a[6], 'width' => $dim[0], 'height' => $dim[1], 'position' => 0, 'credit' => 'Unsplash reference image; fictional artwork attribution', 'source_url' => 'https://images.unsplash.com/'.$source]);
+                app(BuildMediaRenditions::class)->execute($media);
+                $edition = $this->put(Edition::class, 400 + $i, ['artwork_id' => $art->id, 'label_en' => 'Collector edition', 'label_ar' => 'إصدار لهواة الاقتناء', 'is_limited' => true, 'total' => 10 + $i * 5, 'availability' => $i === 3 ? 'sold_out' : 'available', 'starting_price_minor' => 450000 + $i * 50000, 'currency' => 'AED']);
                 $edition->printSizes()->sync([$size->id]);
             }
             $ex = $this->put(Exhibition::class, 500, ['slug' => 'beyond-the-horizon', 'title_en' => 'Beyond the horizon', 'title_ar' => 'ما وراء الأفق', 'subtitle_en' => 'On distance, light, and the art of being still.', 'subtitle_ar' => 'عن المسافة والضوء وفن السكون.', 'hero_artwork_id' => self::id(100), 'published_at' => '2026-09-01T00:00:00Z', 'position' => 0]);

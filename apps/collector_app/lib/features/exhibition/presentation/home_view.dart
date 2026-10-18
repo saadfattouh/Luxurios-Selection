@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../../../design/tokens.dart';
 import '../data/models.dart';
 import 'artwork_image.dart';
+import '../../discovery/presentation/discovery_navigation.dart';
 import 'entrance_view.dart';
 import 'exhibition_view_model.dart';
 
@@ -78,18 +79,24 @@ class HomeView extends StatelessWidget {
                       ...data.exhibitions.map(
                         (e) => Padding(
                           padding: const EdgeInsets.only(bottom: 24),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                e.title.en,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .headlineMedium,
-                              ),
-                              const SizedBox(height: 8),
-                              Text(e.subtitle.en),
-                            ],
+                          child: InkWell(
+                            onTap: () =>
+                                openDiscovery(context, 'exhibitions', e.slug),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  e.title.en,
+                                  style: Theme.of(
+                                    context,
+                                  ).textTheme.headlineMedium,
+                                ),
+                                const SizedBox(height: 8),
+                                Text(e.subtitle.en),
+                                const SizedBox(height: 8),
+                                const Text('Explore exhibition  →'),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -99,20 +106,27 @@ class HomeView extends StatelessWidget {
                         runSpacing: 12,
                         children: data.collections
                             .map(
-                              (c) => Container(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 20,
-                                  vertical: 14,
+                              (c) => InkWell(
+                                onTap: () => openDiscovery(
+                                  context,
+                                  'collections',
+                                  c.slug,
                                 ),
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    color: ExhibitionTokens.line,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 20,
+                                    vertical: 14,
                                   ),
-                                  borderRadius: BorderRadius.circular(
-                                    ExhibitionTokens.radius,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: ExhibitionTokens.line,
+                                    ),
+                                    borderRadius: BorderRadius.circular(
+                                      ExhibitionTokens.radius,
+                                    ),
                                   ),
+                                  child: Text(c.title.en),
                                 ),
-                                child: Text(c.title.en),
                               ),
                             )
                             .toList(),
@@ -120,6 +134,7 @@ class HomeView extends StatelessWidget {
                       const SectionHeading('Curator’s Selection', number: '02'),
                       ArtworkSequence(
                         artworks: data.curatorsSelection,
+                        section: 'curator',
                         availableWidth: width - gutter * 2,
                       ),
                       const SectionHeading(
@@ -128,6 +143,7 @@ class HomeView extends StatelessWidget {
                       ),
                       ArtworkSequence(
                         artworks: data.newWorks,
+                        section: 'new',
                         availableWidth: width - gutter * 2,
                       ),
                       const SectionHeading(
@@ -155,9 +171,9 @@ class HomeView extends StatelessWidget {
                               const SizedBox(height: 20),
                               Text(
                                 photographer.name.en,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .headlineLarge,
+                                style: Theme.of(
+                                  context,
+                                ).textTheme.headlineLarge,
                               ),
                               const SizedBox(height: 20),
                               ConstrainedBox(
@@ -175,6 +191,7 @@ class HomeView extends StatelessWidget {
                       const SectionHeading('Limited Editions', number: '05'),
                       ArtworkSequence(
                         artworks: data.limitedEditions,
+                        section: 'limited',
                         availableWidth: width - gutter * 2,
                         editions: true,
                       ),
@@ -230,10 +247,12 @@ class ArtworkSequence extends StatelessWidget {
     required this.artworks,
     required this.availableWidth,
     this.editions = false,
+    this.section = 'works',
   });
   final List<Artwork> artworks;
   final double availableWidth;
   final bool editions;
+  final String section;
   @override
   Widget build(BuildContext context) {
     if (artworks.isEmpty) return const Text('New works are being prepared.');
@@ -247,7 +266,16 @@ class ArtworkSequence extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          AspectRatio(aspectRatio: 1.6, child: ArtworkImage(artwork: a)),
+          InkWell(
+            onTap: () => approachArtwork(context, a, 'home/$section/${a.id}'),
+            child: Hero(
+              tag: 'home/$section/${a.id}',
+              child: AspectRatio(
+                aspectRatio: 1.6,
+                child: ArtworkImage(artwork: a),
+              ),
+            ),
+          ),
           const SizedBox(height: 20),
           Text(a.title.en, style: Theme.of(context).textTheme.headlineMedium),
           const SizedBox(height: 8),
